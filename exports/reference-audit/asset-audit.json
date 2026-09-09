@@ -1,0 +1,39 @@
+{
+  "input_hashes": {
+    "assets/reference/airpods-4/source/AirPods 4.fbx": "cf4f416c294ce657342da572d74a58e34cfbd8611f6fd71e035c26350af71295",
+    "assets/reference/airpods-4/textures/DGBEWepXmsFLatr.png": "243eacf3af1c5e4269f62bf1bcb6b554970b0c02706ca09a833e1284fe121575",
+    "assets/reference/airpods-4/textures/HRDjIYtbpAAYsXT.png": "f499556368f6011a19b888730b5bcfdea17ca441492a83e681066b8b0042ec21",
+    "assets/reference/airpods-4/textures/HcAvQCvdCBABZgg.png": "0f1523aaf8da5263dfcb88c56bcd6001f6cc1ca08ab05eb4cd929091d90a13b2",
+    "assets/reference/airpods-4/textures/IcYzXMIntnUGVkS.png": "10256ffb03d7c6966e9a2aa8084d91a506132c72896765df1b361d75732142a0",
+    "assets/reference/airpods-4/textures/LCNVQVlLXwSKZfn.png": "f3f2367b643ce2853d03a380ac7e586da0f11676ad0bcc1118ae8ab8869eee82",
+    "assets/reference/airpods-4/textures/hzRAhqrsyMepKLY.jpg": "e1f71cd6cd969d363a9e128bdfe54c55a5e08ccfcfcb8a1272529617b09b0d9d",
+    "assets/reference/airpods-4/textures/internal_ground_ao_texture.jpeg": "9fac9796ee55d2cbe57bfcd9a9dee789e8d054a70cb519cd37b6d88d922f99d9",
+    "assets/reference/airpods-4/textures/jCnUEPXiviHNYTn.jpg": "dcc405074d5d5396d6997788c60a9ae83ee41952b60ed52c0f25eb17dc9f2e91",
+    "assets/reference/clawd.stl": "74e40cdac28d5c7524adb491f19daa769301ec3489e594cdefd1f0d354e27e2c"
+  },
+  "packages": [],
+  "stls": [
+    {
+      "path": "assets/reference/clawd.stl",
+      "triangles": 124,
+      "bounds_raw": [
+        [
+          -33.0,
+          -26.0,
+          0.0
+        ],
+        [
+          33.0,
+          26.0,
+          35.0
+        ]
+      ],
+      "dimensions_raw": [
+        66.0,
+        52.0,
+        35.0
+      ],
+      "unit": "unspecified by STL; compare with source 3MF before treating as mm"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "release": "v0.3.0-alpha",
+  "design_revision": "v03",
+  "date": "2026-09-09",
+  "blender_version": "5.2.1 LTS",
+  "blender_build_hash": "9e2066aef7ef",
+  "clean_rebuild_from_included_open_references": true,
+  "restricted_donor_assets_used": false,
+  "digital_gates_passed": true,
+  "prototype_stls_byte_identical_to_release": true,
+  "sha256": {
+    "clawd-prototype-body-v03-mm.stl": "9478ebdbdf1bb0dae2bba0ac64101c09098427a58f1dac058b486e990829c540",
+    "clawd-prototype-lid-v03-mm.stl": "6f45fe25ff574fce68a1450deec7ced4e27e02e646eaea7323414b6cde18c33d"
+  },
+  "physical_validation": "NOT PERFORMED",
+  "cross_version_bit_identical_output_guaranteed": false
+}

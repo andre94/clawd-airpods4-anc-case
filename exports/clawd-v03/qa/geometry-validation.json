@@ -1,0 +1,245 @@
+{
+  "status": "DIGITAL_CHECKS_ONLY_PHYSICAL_QUALIFICATION_PENDING",
+  "units": "millimeter",
+  "parts": {
+    "CLAWD | body": {
+      "geometry_sha256": "a611d453db5e53fefeb02846706964b69b8b630974c6234d054cfdc3a6a66cbc",
+      "vertices": 8714,
+      "triangles": 17432,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "non_manifold_edges": 0,
+      "inconsistently_oriented_edges": 0,
+      "loose_vertices": 0,
+      "degenerate_faces_below_1e-10_mm2": 0,
+      "signed_volume_mm3": 36690.37384981301,
+      "surface_area_mm2": 14785.597427713867,
+      "dimensions_mm": [
+        75.77777862548828,
+        26.899999618530273,
+        42.39634323120117
+      ],
+      "nonadjacent_triangle_overlap_candidates": 0,
+      "overlap_candidate_examples": []
+    },
+    "CLAWD | lid": {
+      "geometry_sha256": "0b0e0cb8ab53bfe47c97d101c0854d8774e983c0a7ec1b48fa589aefe15a6cff",
+      "vertices": 4282,
+      "triangles": 8560,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "non_manifold_edges": 0,
+      "inconsistently_oriented_edges": 0,
+      "loose_vertices": 0,
+      "degenerate_faces_below_1e-10_mm2": 0,
+      "signed_volume_mm3": 15201.8535027501,
+      "surface_area_mm2": 6865.086816940144,
+      "dimensions_mm": [
+        62.0,
+        26.899999618530273,
+        16.50365447998047
+      ],
+      "nonadjacent_triangle_overlap_candidates": 0,
+      "overlap_candidate_examples": []
+    },
+    "FIT CHECK | body": {
+      "geometry_sha256": "fe053fd435fc809c9542ec731b32b7225a2f60a5aaf675f8e5f9584963bcc811",
+      "vertices": 4423,
+      "triangles": 8846,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "non_manifold_edges": 0,
+      "inconsistently_oriented_edges": 0,
+      "loose_vertices": 0,
+      "degenerate_faces_below_1e-10_mm2": 0,
+      "signed_volume_mm3": 20809.71461693288,
+      "surface_area_mm2": 10782.814973567612,
+      "dimensions_mm": [
+        56.0,
+        26.899999618530273,
+        34.39634323120117
+      ],
+      "nonadjacent_triangle_overlap_candidates": 0,
+      "overlap_candidate_examples": []
+    },
+    "FIT CHECK | lid": {
+      "geometry_sha256": "8d8787e27fcdc037c5614a8eb9fc93b1d322f696a4bb1701eb54ca0e625fc13e",
+      "vertices": 3611,
+      "triangles": 7218,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "non_manifold_edges": 0,
+      "inconsistently_oriented_edges": 0,
+      "loose_vertices": 0,
+      "degenerate_faces_below_1e-10_mm2": 0,
+      "signed_volume_mm3": 12967.788411366028,
+      "surface_area_mm2": 6018.459995624831,
+      "dimensions_mm": [
+        56.0,
+        26.899999618530273,
+        16.50365447998047
+      ],
+      "nonadjacent_triangle_overlap_candidates": 0,
+      "overlap_candidate_examples": []
+    }
+  },
+  "parameters_sha256": "153c618167678264f73792bb07aae650f89b98eb68be1eefb4afc651ab40b309",
+  "closed_device_intersections": {
+    "CLAWD | body / REFERENCE | calibrated body envelope, not metrology": {
+      "volume_mm3": 0,
+      "faces": 0
+    },
+    "CLAWD | body / REFERENCE | calibrated lid envelope, not metrology": {
+      "volume_mm3": 0,
+      "faces": 0
+    },
+    "CLAWD | lid / REFERENCE | calibrated body envelope, not metrology": {
+      "volume_mm3": 0,
+      "faces": 0
+    },
+    "CLAWD | lid / REFERENCE | calibrated lid envelope, not metrology": {
+      "volume_mm3": 0,
+      "faces": 0
+    },
+    "FIT CHECK | body / REFERENCE | calibrated body envelope, not metrology": {
+      "volume_mm3": 0,
+      "faces": 0
+    },
+    "FIT CHECK | body / REFERENCE | calibrated lid envelope, not metrology": {
+      "volume_mm3": 0,
+      "faces": 0
+    },
+    "FIT CHECK | lid / REFERENCE | calibrated body envelope, not metrology": {
+      "volume_mm3": 0,
+      "faces": 0
+    },
+    "FIT CHECK | lid / REFERENCE | calibrated lid envelope, not metrology": {
+      "volume_mm3": 0,
+      "faces": 0
+    }
+  },
+  "hinge_sweep": {
+    "pivot_mm": [
+      -1.9104145394521765e-06,
+      9.591658592224121,
+      36.72350311279297
+    ],
+    "angle_range_degrees": [
+      0,
+      115
+    ],
+    "step_degrees": 2.5,
+    "tested_poses": 47,
+    "colliding_poses": [],
+    "qualification": "Discrete surrogate-geometry screen; actual hinge location, continuous motion and hand clearance are not validated"
+  },
+  "axial_insertion_screen": {
+    "CLAWD | body": {
+      "tested_poses": 66,
+      "step_mm": 1,
+      "colliding_poses": []
+    },
+    "CLAWD | lid": {
+      "tested_poses": 66,
+      "step_mm": 1,
+      "colliding_poses": []
+    }
+  },
+  "selected_wall_sections_mm": {
+    "body_x-18_z12": [
+      3.35928,
+      4.35965
+    ],
+    "body_x-18_z20": [
+      2.70126,
+      3.70222
+    ],
+    "body_x-18_z26": [
+      2.69823,
+      2.89923
+    ],
+    "body_x-10_z12": [
+      2.22262,
+      3.22385
+    ],
+    "body_x-10_z20": [
+      2.00149,
+      3.0009
+    ],
+    "body_x-10_z26": [
+      2.00076,
+      3.00085
+    ],
+    "body_x0_z12": [
+      2.2099,
+      3.21303
+    ],
+    "body_x0_z20": [
+      2.00027,
+      3.00017
+    ],
+    "body_x0_z26": [
+      2.00014
+    ],
+    "body_x10_z12": [
+      2.22262,
+      3.22385
+    ],
+    "body_x10_z20": [
+      2.00149,
+      3.0009
+    ],
+    "body_x10_z26": [
+      2.00076,
+      3.00085
+    ],
+    "body_x18_z12": [
+      3.35928,
+      4.35965
+    ],
+    "body_x18_z20": [
+      2.70127,
+      3.70223
+    ],
+    "body_x18_z26": [
+      2.69823,
+      2.89923
+    ],
+    "eye_floor_x-19.8": [
+      3.64822,
+      3.447
+    ],
+    "eye_floor_x19.8": [
+      3.64822,
+      3.44701
+    ],
+    "lid_back_x-18_z47.2": [
+      11.49624,
+      13.56942
+    ],
+    "lid_back_x0_z47.2": [
+      6.64119,
+      7.63854
+    ],
+    "lid_back_x18_z47.2": [
+      12.49634,
+      13.5695
+    ]
+  },
+  "wall_check_scope": "Selected axis-aligned sections only, not a certified global minimum-wall analysis; bevel/engraving/hinge edges need printer review",
+  "original_input_hashes_unchanged": true,
+  "physical_tests_performed": [],
+  "outstanding_physical_tests": [
+    "Actual dimensions, lid seam and hinge axis",
+    "Finished PA12 clearance and insertion/removal forces",
+    "Body and especially separate-lid retention, with removable liners if needed",
+    "Full real lid opening and earbud removal",
+    "USB-C cable moulding clearance",
+    "ANC Find My speaker audibility",
+    "Front LED visibility and pairing/reset tap operation",
+    "Qi and Apple Watch charging alignment, attachment and temperature",
+    "Material, paint and liner compatibility with the device finish"
+  ],
+  "mesh_gate_passed": true,
+  "surrogate_fit_gate_passed": true
+}

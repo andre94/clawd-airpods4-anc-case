@@ -1,0 +1,74 @@
+{
+  "release_status": "UNVALIDATED_FIT_AND_KEYRING_PROTOTYPE_NOT_FOR_FINAL_PRODUCTION",
+  "stl_units": "mm; select 100% scale",
+  "hardware_exported": false,
+  "files": {
+    "clawd-prototype-body-v03-mm.stl": {
+      "sha256": "9478ebdbdf1bb0dae2bba0ac64101c09098427a58f1dac058b486e990829c540",
+      "bytes": 871684,
+      "quantity": 1,
+      "dimensions_mm": [
+        75.77777862548828,
+        26.899999618530273,
+        42.39634323120117
+      ]
+    },
+    "clawd-prototype-lid-v03-mm.stl": {
+      "sha256": "6f45fe25ff574fce68a1450deec7ced4e27e02e646eaea7323414b6cde18c33d",
+      "bytes": 428084,
+      "quantity": 1,
+      "dimensions_mm": [
+        62.0,
+        26.899999618530273,
+        16.50365447998047
+      ]
+    },
+    "clawd-prototype-pair-v03-mm.3mf": {
+      "sha256": "7ea71926ef7319fcbac8b2142221e2e3fe148c1896787262d801b07b32631269",
+      "bytes": 374645,
+      "quantity": "One body and one lid; alternative to the two STLs, not additional items"
+    }
+  },
+  "round_trip": {
+    "clawd-prototype-body-v03-mm.stl": {
+      "dimensions_mm": [
+        75.77777862548828,
+        26.899999618530273,
+        42.39634323120117
+      ],
+      "non_manifold_edges": 0,
+      "boundary_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume_mm3": 36690.373858703184,
+      "scale_matches_within_0_001_mm": true
+    },
+    "clawd-prototype-lid-v03-mm.stl": {
+      "dimensions_mm": [
+        62.0,
+        26.900001525878906,
+        16.50365447998047
+      ],
+      "non_manifold_edges": 0,
+      "boundary_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume_mm3": 15201.853424225088,
+      "scale_matches_within_0_001_mm": true
+    }
+  },
+  "three_mf_validation": {
+    "unit": "millimeter",
+    "objects": [
+      {
+        "name": "CLAWD body - UNVALIDATED v03",
+        "vertices": 8714,
+        "triangles": 17432
+      },
+      {
+        "name": "CLAWD lid - UNVALIDATED v03",
+        "vertices": 4282,
+        "triangles": 8560
+      }
+    ],
+    "zip_crc_check_passed": true
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "release": "v0.3.0-alpha",
+  "design_revision": "v03",
+  "files": {
+    ".github/ISSUE_TEMPLATE/fit-report.md": {
+      "sha256": "edd8429ec957ce382ecfba28c4857b8e2b747738d2a7dcb722fdaa1c7aee3c6a",
+      "bytes": 830
+    },
+    ".github/workflows/source-check.yml": {
+      "sha256": "6fe43010931cf2c16a521de1ba7548e6e212403519fdee66d0b4a0a585574117",
+      "bytes": 343
+    },
+    ".gitignore": {
+      "sha256": "2f93bdcba7f79252ae2a07b9cc42cf77a0a91fea0f38f73dea42a43105f7826f",
+      "bytes": 69
+    },
+    "CHANGELOG.md": {
+      "sha256": "d63d92f983af6e5ec1bccdc367ebed0421396e1641bcab722a2ba7832c52b942",
+      "bytes": 969
+    },
+    "CONTRIBUTING.md": {
+      "sha256": "acb94cf289c5d3ed4f615451727baa9a95f1f84ac95b98ffbf6b7059d76596bd",
+      "bytes": 1559
+    },
+    "LICENSE.md": {
+      "sha256": "f47dd5a60f7931307c6d3edb871c3ebcfa2634a42dd32a8da4c0a5472ec3df2a",
+      "bytes": 1887
+    },
+    "LICENSES/CC-BY-4.0.txt": {
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
+      "bytes": 17023
+    },
+    "LICENSES/CC-BY-SA-4.0.txt": {
+      "sha256": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966",
+      "bytes": 18375
+    },
+    "LICENSES/MIT.txt": {
+      "sha256": "f9660341841079e6ca1cadc468cbc71c9b37fdc9ae1741cff568f05a24149495",
+      "bytes": 1069
+    },
+    "README.md": {
+      "sha256": "d8ce06edf8b0517b592539075cdccf2f0e7959292d277bfc663179b5bb823ece",
+      "bytes": 5250
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "sha256": "cbcb8b3475ca0674c65a14711d2ec5f6cdd2e543515e83014d4b0f2696c047f8",
+      "bytes": 3890
+    },
+    "assets/reference/airpods-4/source/AirPods 4.fbx": {
+      "sha256": "cf4f416c294ce657342da572d74a58e34cfbd8611f6fd71e035c26350af71295",
+      "bytes": 5104236
+    },
+    "assets/reference/airpods-4/textures/DGBEWepXmsFLatr.png": {
+      "sha256": "243eacf3af1c5e4269f62bf1bcb6b554970b0c02706ca09a833e1284fe121575",
+      "bytes": 41391
+    },
+    "assets/reference/airpods-4/textures/HRDjIYtbpAAYsXT.png": {
+      "sha256": "f499556368f6011a19b888730b5bcfdea17ca441492a83e681066b8b0042ec21",
+      "bytes": 1272938
+    },
+    "assets/reference/airpods-4/textures/HcAvQCvdCBABZgg.png": {
+      "sha256": "0f1523aaf8da5263dfcb88c56bcd6001f6cc1ca08ab05eb4cd929091d90a13b2",
+      "bytes": 42870
+    },
+    "assets/reference/airpods-4/textures/IcYzXMIntnUGVkS.png": {
+      "sha256": "10256ffb03d7c6966e9a2aa8084d91a506132c72896765df1b361d75732142a0",
+      "bytes": 82979
+    },
+    "assets/reference/airpods-4/textures/LCNVQVlLXwSKZfn.png": {
+      "sha256": "f3f2367b643ce2853d03a380ac7e586da0f11676ad0bcc1118ae8ab8869eee82",
+      "bytes": 481356
+    },
+    "assets/reference/airpods-4/textures/hzRAhqrsyMepKLY.jpg": {
+      "sha256": "e1f71cd6cd969d363a9e128bdfe54c55a5e08ccfcfcb8a1272529617b09b0d9d",
+      "bytes": 294800
+    },
+    "assets/reference/airpods-4/textures/internal_ground_ao_texture.jpeg": {
+      "sha256": "9fac9796ee55d2cbe57bfcd9a9dee789e8d054a70cb519cd37b6d88d922f99d9",
+      "bytes": 19339
+    },
+    "assets/reference/airpods-4/textures/jCnUEPXiviHNYTn.jpg": {
+      "sha256": "dcc405074d5d5396d6997788c60a9ae83ee41952b60ed52c0f25eb17dc9f2e91",
+      "bytes": 3988
+    },
+    "assets/reference/clawd.stl": {
+      "sha256": "74e40cdac28d5c7524adb491f19daa769301ec3489e594cdefd1f0d354e27e2c",
+      "bytes": 6284
+    },
+    "docs/BUILD.md": {
+      "sha256": "6746de50a1536b160432253bc0526506daa8958f6884d7b70337be29c20ffafc",
+      "bytes": 3975
+    },
+    "docs/PRINTING.md": {
+      "sha256": "b1847541b0995dbb2714cace21899e23ce35ec1ed1a103f48335ca3d6e954fad",
+      "bytes": 3275
+    },
+    "docs/QUALIFICATION.md": {
+      "sha256": "622be49967d56a46156482af0e6e96da4f894a0c56f989cdd5bfe11e5fc2870d",
+      "bytes": 2668
+    },
+    "docs/README.it.md": {
+      "sha256": "006d9819c7064ab440d0f0c593fd55d5857e0d2204f8fb55f3e4563d44ad49cc",
+      "bytes": 2354
+    },
+    "docs/images/clawd-v03-front.png": {
+      "sha256": "c6dcc0aa91ba93f995dd469a731e3f9c82281352d6a7400622a595d32015e93b",
+      "bytes": 1881930
+    },
+    "docs/images/clawd-v03-hole-detail.png": {
+      "sha256": "722dcff7618a0cf6051ef7cd4e3ba7ee3755a69f469b61adf7a5390ab44da89b",
+      "bytes": 1874196
+    },
+    "docs/images/clawd-v03-rear.png": {
+      "sha256": "2b0d322d27bb8168c05a086233c05304d691d802bf9d64aaf7b97cf7a292d4bf",
+      "bytes": 1925844
+    },
+    "exports/clawd-v03/clawd-prototype/README.md": {
+      "sha256": "1c4a5f948f7119823e61e1a5e14fb888ab2514d46c11ebc0cef2e323c7fcd87c",
+      "bytes": 1043
+    },
+    "exports/clawd-v03/clawd-prototype/clawd-prototype-body-v03-mm.stl": {
+      "sha256": "9478ebdbdf1bb0dae2bba0ac64101c09098427a58f1dac058b486e990829c540",
+      "bytes": 871684
+    },
+    "exports/clawd-v03/clawd-prototype/clawd-prototype-lid-v03-mm.stl": {
+      "sha256": "6f45fe25ff574fce68a1450deec7ced4e27e02e646eaea7323414b6cde18c33d",
+      "bytes": 428084
+    },
+    "exports/clawd-v03/clawd-prototype/clawd-prototype-pair-v03-mm.3mf": {
+      "sha256": "7ea71926ef7319fcbac8b2142221e2e3fe148c1896787262d801b07b32631269",
+      "bytes": 374645
+    },
+    "exports/clawd-v03/qa/design-build.json": {
+      "sha256": "f08860220d483ae24a769f2eba654a844a518932d82a5e6e20a81710cc8d09d3",
+      "bytes": 6361
+    },
+    "exports/clawd-v03/qa/export-validation.json": {
+      "sha256": "7172a507433bc7aea049884d187bfafb0a7f8054259bdb3315c642cfbc5fdc4a",
+      "bytes": 2027
+    },
+    "exports/clawd-v03/qa/geometry-validation.json": {
+      "sha256": "bba11dfc8dbe5332d8299c4c695c7d10041bb3b3c9bb7f7dea0223e8676c22b6",
+      "bytes": 6595
+    },
+    "exports/clawd-v03/qa/publication-audit.json": {
+      "sha256": "08e30a9ee7540313b2795fd917e894f3ea8b4bd495792ae368d416200f37d46c",
+      "bytes": 658
+    },
+    "exports/clawd-v03/qa/rebuild-validation.json": {
+      "sha256": "737d9dcf74f57b17b88724ed58debe74b466a4e4ff28afab0f4f78572724031a",
+      "bytes": 669
+    },
+    "exports/clawd-v03/qa/revision-validation.json": {
+      "sha256": "a250e76ff78f91243438884dc032548f15c35823c4a6f122647c3e4ad62dd14b",
+      "bytes": 6427
+    },
+    "exports/reference-audit/asset-audit.json": {
+      "sha256": "07b8f9fdfd6336fb0db47c7e12b094bda830fa9b93ff9376fa65cfbab668c27b",
+      "bytes": 1752
+    },
+    "models/clawd-airpods4-anc-v03.blend": {
+      "sha256": "2ce22a3cdbfd0d33c73b1af0a71eab9650b97a834c3bc95749c5933d52c4315c",
+      "bytes": 8277136
+    },
+    "models/clawd-v01-parameters.json": {
+      "sha256": "84d1e0713696c5115c64dd7f91e933d1f5fea4f0d981f0b7260aa1cf246365d5",
+      "bytes": 1172
+    },
+    "models/clawd-v02-parameters.json": {
+      "sha256": "342b3675e0142dd3c719bc820ef9a6665d43482e5f243074a3c39d4f9dff80f3",
+      "bytes": 1671
+    },
+    "models/clawd-v03-parameters.json": {
+      "sha256": "153c618167678264f73792bb07aae650f89b98eb68be1eefb4afc651ab40b309",
+      "bytes": 2899
+    },
+    "tools/add_clawd_keyring.py": {
+      "sha256": "6c22353e88648ef0bf2c78b79d5c5ded7226753add32c753a9ae77b801362e1b",
+      "bytes": 21314
+    },
+    "tools/audit_reference_assets.py": {
+      "sha256": "a6109a481c7fc0389715a3d2b05823f7f97a5f966f302d8edbbb1bd5caa45983",
+      "bytes": 4961
+    },
+    "tools/build_clawd_case.py": {
+      "sha256": "efa661d236365af9f2b75f1daced93c8a3d28904b7a58f500dbd15af9338762a",
+      "bytes": 17609
+    },
+    "tools/check_release.py": {
+      "sha256": "8bac4fa5533afe0b0ac078379b1a1ea7a091a63be2d137bc133119d65ab8b800",
+      "bytes": 4906
+    },
+    "tools/clawd_branding.py": {
+      "sha256": "715c2c30f92b70f50f0267ddf6734b81edbda71667aff747e2a854a3f5cc6109",
+      "bytes": 3332
+    },
+    "tools/diagnose_clawd_walls.py": {
+      "sha256": "e5a79b2ca1f8b996459a963834e17a2112c3c00053273bd740b9b8ff62942505",
+      "bytes": 8536
+    },
+    "tools/export_clawd_case.py": {
+      "sha256": "228d02e58f397744840fddb1f9e1c71a5d6367e79c117ffda38845921d533848",
+      "bytes": 9658
+    },
+    "tools/prepare_references.py": {
+      "sha256": "0085dbeb3b5e4cb50ce8ba695bf05362afc880215ae836b0867193e358a062c6",
+      "bytes": 2553
+    },
+    "tools/rebuild.py": {
+      "sha256": "e67211a6b3551d67568508c7258dc3a182d1205fad00382df624899c29f5ea99",
+      "bytes": 2765
+    },
+    "tools/render_clawd_case.py": {
+      "sha256": "005d0714499951333318bb9157cc3235654f748a2b086a3f71130c54337281f3",
+      "bytes": 10340
+    },
+    "tools/render_clawd_keyring.py": {
+      "sha256": "646d95219e78bd2c7d621436f9a7cf3cb78df02e245eeaf670896a3219fa6620",
+      "bytes": 2146
+    },
+    "tools/revise_clawd_lid.py": {
+      "sha256": "c270597d47bb71e5b5e3efbe01ae86e9d54aa73602bc189d95a84116a315618a",
+      "bytes": 9341
+    },
+    "tools/save_public_blend.py": {
+      "sha256": "1871959e847c8f79b791662f7b56e1da308fc839d2d51a18447832508e860ff3",
+      "bytes": 4001
+    },
+    "tools/validate_clawd_case.py": {
+      "sha256": "648fe09cccd65affa7b14d60a36ca82996758ac3919a5d2fe64d18caa951f3f2",
+      "bytes": 10018
+    }
+  }
+}

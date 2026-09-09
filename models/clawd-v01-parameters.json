@@ -1,0 +1,23 @@
+{
+  "revision": "v01",
+  "release_status": "UNVALIDATED_FIT_PROTOTYPE_NOT_FOR_FINAL_PRODUCTION",
+  "units": "millimeter",
+  "apple_case": {"width": 50.1, "depth": 21.2, "height": 46.2},
+  "case_bottom_z": 2.65,
+  "nominal_normal_clearance": 0.35,
+  "cover_seam_gap": 0.70,
+  "character_body_width": 62.0,
+  "character_body_height": 51.6,
+  "leg_length": 8.0,
+  "front_y": -13.95,
+  "back_y": 12.95,
+  "edge_radius": 0.55,
+  "eyes": {"centers_x": [-19.8, 19.8], "center_z": 26.0, "width": 6.0, "height": 7.0, "recess_depth": 0.8},
+  "front_access": {"width": 12.0, "lower_z": 24.5, "corner_radius": 1.8},
+  "bottom_service_opening": {"width": 36.0, "depth": 10.0, "upper_z": 8.0, "corner_radius": 1.0},
+  "hinge_relief": {"front_y": 6.8, "body_lower_z": 29.0, "lid_upper_z": 42.2},
+  "back_text": {"content": "andreabalbo.com", "center_z": 47.2, "height": 3.0, "engraving_depth": 0.45},
+  "candidate_process": "SLS or MJF PA12 nylon, printer and finished-part tolerances not yet selected",
+  "retention": "Clearance fit; removable liner/pad thickness and lid retention require physical qualification. No positive lock is claimed.",
+  "physical_validation_required": true
+}

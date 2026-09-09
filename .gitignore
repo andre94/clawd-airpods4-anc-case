@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.blend[0-9]*
+.venv*/
+build*/
+*.log

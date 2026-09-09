@@ -1,0 +1,212 @@
+{
+  "release_status": "UNVALIDATED_FIT_AND_KEYRING_PROTOTYPE_NOT_FOR_FINAL_PRODUCTION",
+  "baseline_blend_sha256": "fc610a961730cd5d924928113ec28d44036b51d3e37bd62f366b1ba1818d3002",
+  "revision_scope": "Right-front corner bore and its rounded mouths only. v02 lid, branding, insertion cavities, seam, service openings, hinge relief and overall plastic envelope remain unchanged. Metal hardware is a non-printing preview.",
+  "preserved_geometry": {
+    "CLAWD | lid": true,
+    "FIT CHECK | body": true,
+    "FIT CHECK | lid": true,
+    "CUT | body insertion clearance": true,
+    "CUT | lid insertion clearance": true,
+    "CUT | body rear hinge clearance": true,
+    "CUT | lid rear hinge clearance": true,
+    "REFERENCE | calibrated body envelope, not metrology": true,
+    "REFERENCE | calibrated lid envelope, not metrology": true
+  },
+  "outside_anchor_surface_difference": {
+    "bidirectional_vertex_to_surface_max_mm": [
+      1.1483759408292826e-05,
+      0.0
+    ],
+    "within_0_0001_mm": true,
+    "scope": "Outside x >= 26.5, y <= -2.5, z 22.8 to 28.8 mm; not a physical tolerance measurement"
+  },
+  "plastic_bounds_unchanged": true,
+  "bore_center_mm": [
+    34.13888931274414,
+    -10.199999809265137,
+    25.799999237060547
+  ],
+  "bore_axis": [
+    0.7071067690849304,
+    0.7071067690849304,
+    0.0
+  ],
+  "sharp_face_mouth_centers_mm": [
+    [
+      30.38888931274414,
+      -13.95,
+      25.799999237060547
+    ],
+    [
+      37.88888931274414,
+      -6.449999999999999,
+      25.799999237060547
+    ]
+  ],
+  "nominal_centerline_length_inside_block_mm": 10.606601717798213,
+  "mouth_rounding": {
+    "nominal_meridian_round_radius_mm": 0.3,
+    "arc_segments": 12,
+    "mouths": {
+      "front": {
+        "vertices": 134,
+        "radial_range_mm": [
+          2.0878470035346117,
+          2.512130205260542
+        ],
+        "expected_radial_range_mm": [
+          2.087867965644036,
+          2.512132034355964
+        ],
+        "matches_within_0_01_mm": true
+      },
+      "right": {
+        "vertices": 128,
+        "radial_range_mm": [
+          2.0878679008424856,
+          2.512131533957286
+        ],
+        "expected_radial_range_mm": [
+          2.087867965644036,
+          2.512132034355964
+        ],
+        "matches_within_0_01_mm": true
+      }
+    },
+    "scope": "Explicit tangent arcs in bore-axis meridian planes, not an overlap-clamped edge modifier or a certified constant-radius 3D fillet"
+  },
+  "sections": {
+    "diameter_sample_count": 96,
+    "minimum_sampled_diameter_mm": 3.9990622997283936,
+    "maximum_sampled_diameter_mm": 3.999083995819092,
+    "minimum_central_corner_section_mm": 3.0760977993011474,
+    "central_section_samples": [
+      {
+        "z_mm": 25.299999237060547,
+        "wall_mm": 3.139308525085449,
+        "inner_mm": [
+          35.507972717285156,
+          -11.569083213806152,
+          25.299999237060547
+        ],
+        "outer_mm": [
+          37.72779846191406,
+          -13.788908958435059,
+          25.299999237060547
+        ]
+      },
+      {
+        "z_mm": 25.824999237060545,
+        "wall_mm": 3.0760977993011474,
+        "inner_mm": [
+          35.552669525146484,
+          -11.61378002166748,
+          25.82499885559082
+        ],
+        "outer_mm": [
+          37.72779846191406,
+          -13.788909912109375,
+          25.82499885559082
+        ]
+      },
+      {
+        "z_mm": 26.299999237060547,
+        "wall_mm": 3.1393097171783446,
+        "inner_mm": [
+          35.507972717285156,
+          -11.569082260131836,
+          26.299999237060547
+        ],
+        "outer_mm": [
+          37.72779846191406,
+          -13.788908958435059,
+          26.299999237060547
+        ]
+      }
+    ],
+    "scope": "Three central shaft stations and three rays in the corner bisector plane. The local central web is NOT a global minimum wall; open bore lips taper. No strength certification."
+  },
+  "cavity_buffer_screen": {
+    "probe_radius_mm": 5.6,
+    "intersection": {
+      "volume_mm3": 0,
+      "faces": 0
+    },
+    "scope": "Expanded bore mesh against insertion-clearance cutter, including 0.6 mm radial entry-rounding allowance; not a global wall or manufactured-tolerance certification"
+  },
+  "hardware": {
+    "reference": {
+      "inner_diameter": 25.0,
+      "wire_diameter": 1.5,
+      "coils": 2,
+      "additional_radial_clearance_probe": 0.15,
+      "centering_offset": 0.55,
+      "qualification": "Illustrative two-torus envelope only; not measured hardware, threading simulation or a load rating"
+    },
+    "coils": [
+      {
+        "coil": 1,
+        "center_mm": [
+          43.119144439697266,
+          -19.180255889892578,
+          25.049999237060547
+        ],
+        "inflated_wire_diameter_mm": 1.8,
+        "closed_intersections": {
+          "CLAWD | body": {
+            "volume_mm3": 0,
+            "faces": 0
+          },
+          "CLAWD | lid": {
+            "volume_mm3": 0,
+            "faces": 0
+          },
+          "REFERENCE | calibrated body envelope, not metrology": {
+            "volume_mm3": 0,
+            "faces": 0
+          },
+          "REFERENCE | calibrated lid envelope, not metrology": {
+            "volume_mm3": 0,
+            "faces": 0
+          }
+        },
+        "hinge_tested_poses": 47,
+        "hinge_colliding_degrees": []
+      },
+      {
+        "coil": 2,
+        "center_mm": [
+          43.119144439697266,
+          -19.180255889892578,
+          26.549999237060547
+        ],
+        "inflated_wire_diameter_mm": 1.8,
+        "closed_intersections": {
+          "CLAWD | body": {
+            "volume_mm3": 0,
+            "faces": 0
+          },
+          "CLAWD | lid": {
+            "volume_mm3": 0,
+            "faces": 0
+          },
+          "REFERENCE | calibrated body envelope, not metrology": {
+            "volume_mm3": 0,
+            "faces": 0
+          },
+          "REFERENCE | calibrated lid envelope, not metrology": {
+            "volume_mm3": 0,
+            "faces": 0
+          }
+        },
+        "hinge_tested_poses": 47,
+        "hinge_colliding_degrees": []
+      }
+    ],
+    "positioned_envelope_gate_passed": true,
+    "scope": "Stationary, simplified two-coil mesh envelope and sampled surrogate lid motion only. No threading, split-ring elasticity, ring swing, clasp geometry, manufactured tolerances, load or wear validation."
+  },
+  "physical_tests_performed": [],
+  "v02_blend_file_unchanged": true
+}
