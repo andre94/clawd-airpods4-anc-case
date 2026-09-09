@@ -14,6 +14,21 @@
 > keyring strength. Do not treat this as a production-ready product or trust
 > an untested cover to carry your AirPods. [Qualification checklist →](docs/QUALIFICATION.md)
 
+## Project links
+
+Publication status checked on **9 September 2026**:
+
+| Platform | Link | Status and contents |
+| --- | --- | --- |
+| GitHub | [Source repository](https://github.com/andre94/clawd-airpods4-anc-case) | Public; canonical editable CAD, scripts and documentation. |
+| GitHub Releases | [v0.3.0-alpha](https://github.com/andre94/clawd-airpods4-anc-case/releases/tag/v0.3.0-alpha) | Public prerelease; source archive and print exports. |
+| Printables | [Model listing](https://www.printables.com/model/1837773-clawd-airpods-4-anc-case-open-cad-v03-wip) | Public; two STLs, two-object 3MF, editable Blender file and renders. |
+| Sketchfab | [Interactive 3D viewer](https://sketchfab.com/3d-models/clawd-airpods-4-anc-case-open-cad-v03-wip-1aea2f19414b48d38c48bbdb90f80ad6) | Public; downloadable colored visualization, not a print file. |
+| Thingiverse | [Saved draft](https://www.thingiverse.com/thing:7407403) · [Owner editor](https://www.thingiverse.com/thing:7407403/edit) | Not public yet; the site requires new accounts to wait 24 hours before publishing. Draft/editor access requires the owner's login. |
+
+Publication does not mean physical validation. Thingiverse publication is not
+scheduled automatically; this dated status must be updated after it goes live.
+
 ## What it is
 
 A two-piece, removable outer cover for the **existing AirPods 4 with Active

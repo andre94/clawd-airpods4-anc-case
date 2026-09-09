@@ -8,6 +8,22 @@ Anthropic e non un sostituto del case elettronico originale.
 digitali non garantiscono dimensioni finite, tenuta del coperchio, ricarica o
 resistenza del foro. Non affidargli il trasporto degli AirPods prima delle prove.
 
+## Link del progetto
+
+Stato delle pubblicazioni verificato il **9 settembre 2026**:
+
+| Piattaforma | Link | Stato e contenuti |
+| --- | --- | --- |
+| GitHub | [Repository sorgenti](https://github.com/andre94/clawd-airpods4-anc-case) | Pubblico; CAD modificabile, script e documentazione di riferimento. |
+| GitHub Releases | [v0.3.0-alpha](https://github.com/andre94/clawd-airpods4-anc-case/releases/tag/v0.3.0-alpha) | Prerelease pubblica; archivio sorgenti e file per la stampa. |
+| Printables | [Pagina del modello](https://www.printables.com/model/1837773-clawd-airpods-4-anc-case-open-cad-v03-wip) | Pubblico; due STL, 3MF con due oggetti, file Blender modificabile e rendering. |
+| Sketchfab | [Visualizzatore 3D interattivo](https://sketchfab.com/3d-models/clawd-airpods-4-anc-case-open-cad-v03-wip-1aea2f19414b48d38c48bbdb90f80ad6) | Pubblico; visualizzazione colorata scaricabile, non un file per la stampa. |
+| Thingiverse | [Bozza salvata](https://www.thingiverse.com/thing:7407403) · [Editor del proprietario](https://www.thingiverse.com/thing:7407403/edit) | Non ancora pubblico; il sito impone 24 ore di attesa ai nuovi account. Bozza ed editor richiedono il login del proprietario. |
+
+La pubblicazione non equivale a una verifica fisica. La pubblicazione su
+Thingiverse non è programmata automaticamente: aggiornare questo stato datato
+dopo l'effettiva messa online.
+
 ## Cosa scaricare
 
 - Un corpo e un coperchio da `exports/clawd-v03/clawd-prototype/`.
