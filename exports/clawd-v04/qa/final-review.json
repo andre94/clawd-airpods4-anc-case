@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "saved_geometry_matches_qa": true,
+    "parameters_match_qa": true,
+    "export_hashes_match_qa": true,
+    "baseline_v03_unchanged": true,
+    "millimetres_confirmed": true
+  },
+  "preserved_feature_regions": {
+    "anchor": {
+      "samples": 6664,
+      "bidirectional_vertex_to_surface_max_mm": [
+        0.0,
+        0.0
+      ],
+      "unchanged_within_0_0001_mm": true
+    },
+    "branding": {
+      "samples": 1344,
+      "bidirectional_vertex_to_surface_max_mm": [
+        0.0,
+        0.0
+      ],
+      "unchanged_within_0_0001_mm": true
+    }
+  },
+  "bore_diameter_range_mm": [
+    3.9990622997283936,
+    3.999083995819092
+  ],
+  "minimum_sampled_anchor_web_mm": 3.0760977993011474,
+  "model_sha256": "4bd1416dcf14bb29b113046adc6b26d2bb21f6f77ecb4634cef89002714a23c5",
+  "model_sha256_scope": "Pre-publication working scene; public file hash is in manifest.json and unchanged print geometry is recorded in publication-audit.json",
+  "physical_validation": "NOT PERFORMED"
+}

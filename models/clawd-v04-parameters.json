@@ -1,0 +1,69 @@
+{
+  "revision": "v04",
+  "derived_from": "models/clawd-airpods4-anc-v03.blend",
+  "release_status": "UNVALIDATED_FULL_WRAP_AND_PAD_RETENTION_PROTOTYPE",
+  "units": "millimeter",
+  "apple_case": {"width": 50.1, "depth": 21.2, "height": 46.2},
+  "case_bottom_z": 2.65,
+  "nominal_normal_clearance": 0.35,
+  "cover_seam_gap": 0.70,
+  "character_body_width": 62.0,
+  "character_body_height": 51.6,
+  "leg_length": 8.0,
+  "front_y": -13.95,
+  "back_y": 12.95,
+  "edge_radius": 0.55,
+  "eyes": {"centers_x": [-19.8, 19.8], "center_z": 26.0, "width": 6.0, "height": 7.0, "recess_depth": 0.8},
+  "front_access": {"width": 10.0, "height": 7.0, "center_z": 28.3, "corner_radius": 1.0, "type": "Bounded LED and direct pairing-access window, not an open-top notch"},
+  "bottom_access": {
+    "usb_c": {"width": 14.0, "depth": 8.0, "corner_radius": 1.0},
+    "speaker_windows": {"centers_x": [-13.0, 13.0], "width": 6.0, "depth": 4.0, "corner_radius": 0.8},
+    "upper_z": 8.0,
+    "qualification": "Provisional service envelopes derived from the visual reference. Verify the actual cable moulding and ANC speaker locations before printing."
+  },
+  "hinge_relief": {
+    "width": 20.0,
+    "front_y": 6.8,
+    "body_lower_z": 29.0,
+    "lid_upper_z": 39.0,
+    "motion_clearance": 0.45,
+    "construction_step_degrees": 0.5,
+    "maximum_open_degrees": 115.0,
+    "qualification": "Local stock-hinge window plus conservative swept clearance around the new rear skirt; surrogate kinematics only"
+  },
+  "retention_pads": {
+    "seat_normal_clearance": 0.65,
+    "nominal_added_seat_depth": 0.30,
+    "candidate_uncompressed_thickness": 0.80,
+    "candidate_material": "Supplier-approved soft silicone foam or equivalent non-marking compliant pad; not rigid printed plastic",
+    "body_side_seats": {"depth_width": 8.0, "lower_z": 18.0, "upper_z": 26.0},
+    "lid_side_seats": {"depth_width": 8.0, "lower_z": 39.2, "upper_z": 44.2},
+    "lid_roof_seat": {"width": 16.0, "depth": 7.0, "lower_z": 46.5},
+    "quantity": {"body": 2, "lid": 3},
+    "attachment": "Pads bond to the cover; friction against the device. The roof seat can accept a finish-compatible removable double-sided pad if friction alone fails physical retention tests.",
+    "qualification": "0.80 mm is a starting sample thickness, not a guaranteed fit. Seat gaps and compression vary over the curved surrogate. No retention force or positive lock is claimed."
+  },
+  "back_text": {
+    "content": "andreabalbo.com",
+    "display_style": "Uppercase-style rectilinear pixel glyphs",
+    "glyph_source": "tools/clawd_branding.py",
+    "center_z": 47.2,
+    "height": 5.0,
+    "width": 59.0,
+    "pixel_pitch": 1.0,
+    "engraving_depth": 1.0
+  },
+  "keyring_anchor": {
+    "source": "Unchanged v03 cutter and reference hardware",
+    "bore_diameter": 4.0,
+    "axis_xy_degrees": 45.0,
+    "center_z": 25.8,
+    "entry_round_radius": 0.30,
+    "attachment": "Metal split ring through the diagonal bore; clasp attaches to the ring",
+    "load_rating": "NONE; neither the anchor nor device retention is physically qualified"
+  },
+  "candidate_process": "Unfilled MJF PA12 for the two rigid shells; compliant pads are separate non-print hardware",
+  "retention": "Fuller wrap with five recessed compliant-pad seats. Bare rigid shells remain clearance fits; install and physically qualify the pads before carrying. No positive latch or guaranteed retention.",
+  "physical_validation_required": true,
+  "revision_scope": "Restore rear wrap outside a local hinge window, motion-clear the rear body rim, close the front notch into a bounded window, replace the broad underside slot with separate service openings, and add internal pad seats. Preserve AirPods 4 ANC calibration, silhouette, eyes, branding and keyring geometry."
+}

@@ -11,8 +11,8 @@ from xml.etree import ElementTree
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "manifest.json"
 EXPECTED_DIMENSIONS = {
-    "clawd-prototype-body-v03-mm.stl": (75.77778, 26.9, 42.39634),
-    "clawd-prototype-lid-v03-mm.stl": (62.0, 26.9, 16.50365),
+    "body": (75.77778, 26.9, 42.39634),
+    "lid": (62.0, 26.9, 16.50365),
 }
 
 
@@ -46,7 +46,7 @@ def check_stl(path, expected):
                 maxima[axis] = max(maxima[axis], value)
     actual = tuple(upper - lower for lower, upper in zip(minima, maxima))
     if any(abs(measured - nominal) > 0.01 for measured, nominal in zip(actual, expected)):
-        raise ValueError(f"Unexpected v03 dimensions: {path.name}: {actual}")
+        raise ValueError(f"Unexpected dimensions: {path.name}: {actual}")
     return {"triangles": triangle_count, "dimensions_mm": actual}
 
 
@@ -59,6 +59,9 @@ def main():
         "LICENSES/CC-BY-4.0.txt", "LICENSES/CC-BY-SA-4.0.txt",
         "models/clawd-airpods4-anc-v03.blend", "docs/QUALIFICATION.md",
         "exports/clawd-v03/qa/publication-audit.json",
+        "models/clawd-airpods4-anc-v04.blend", "docs/clawd-design-v04.md",
+        "exports/clawd-v04/qa/publication-audit.json",
+        "exports/clawd-v04/qa/coverage-revision-validation.json",
     )
     for relative in required:
         if not (ROOT / relative).is_file():
@@ -76,18 +79,22 @@ def main():
         if len(data) >= 50 * 1024 * 1024:
             raise ValueError(f"Oversized repository file: {relative}")
         files[str(relative)] = {"sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data)}
-    directory = ROOT / "exports/clawd-v03/clawd-prototype"
-    meshes = {filename: check_stl(directory / filename, dimensions) for filename, dimensions in EXPECTED_DIMENSIONS.items()}
-    with zipfile.ZipFile(directory / "clawd-prototype-pair-v03-mm.3mf") as archive:
-        if archive.testzip() is not None:
-            raise ValueError("Invalid 3MF archive")
-        model = ElementTree.fromstring(archive.read("3D/3dmodel.model"))
-        namespace = {"model": "http://schemas.microsoft.com/3dmanufacturing/core/2015/02"}
-        objects = model.findall("model:resources/model:object", namespace)
-        if model.get("unit") != "millimeter" or len(objects) != 2:
-            raise ValueError("3MF must contain exactly two objects in millimetres")
+    meshes = {}
+    for revision in ("v03", "v04"):
+        directory = ROOT / f"exports/clawd-{revision}/clawd-prototype"
+        for part, dimensions in EXPECTED_DIMENSIONS.items():
+            filename = f"clawd-prototype-{part}-{revision}-mm.stl"
+            meshes[filename] = check_stl(directory / filename, dimensions)
+        with zipfile.ZipFile(directory / f"clawd-prototype-pair-{revision}-mm.3mf") as archive:
+            if archive.testzip() is not None:
+                raise ValueError("Invalid 3MF archive")
+            model = ElementTree.fromstring(archive.read("3D/3dmodel.model"))
+            namespace = {"model": "http://schemas.microsoft.com/3dmanufacturing/core/2015/02"}
+            objects = model.findall("model:resources/model:object", namespace)
+            if model.get("unit") != "millimeter" or len(objects) != 2:
+                raise ValueError("3MF must contain exactly two objects in millimetres")
     if args.write_manifest:
-        MANIFEST.write_text(json.dumps({"release": "v0.3.0-alpha", "design_revision": "v03", "files": files}, indent=2) + "\n")
+        MANIFEST.write_text(json.dumps({"release": "v0.4.0-alpha", "design_revision": "v04", "files": files}, indent=2) + "\n")
     elif json.loads(MANIFEST.read_text())["files"] != files:
         raise ValueError("Release files differ from manifest; review changes before regenerating it")
     print(json.dumps({"file_count": len(files), "meshes": meshes, "three_mf_objects": 2, "physical_validation": "NOT PERFORMED"}, indent=2))

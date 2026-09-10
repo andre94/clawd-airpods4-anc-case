@@ -15,7 +15,7 @@ def run(command):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Rebuild the v03 prototype in a new directory")
+    parser = argparse.ArgumentParser(description="Rebuild the v04 prototype in a new directory")
     parser.add_argument("--blender", required=True, help="Blender executable path or command")
     parser.add_argument("--output", required=True, type=Path, help="New, nonexistent build directory")
     args = parser.parse_args()
@@ -44,10 +44,11 @@ def main():
         ("clawd-airpods4-anc-reference-study-v01.blend", "build_clawd_case.py"),
         ("clawd-airpods4-anc-v01.blend", "revise_clawd_lid.py"),
         ("clawd-airpods4-anc-v02.blend", "add_clawd_keyring.py"),
+        ("clawd-airpods4-anc-v03.blend", "revise_clawd_coverage.py"),
     )
     for baseline, script in stages:
         run([blender, "--background", output / "models" / baseline, "--python-exit-code", "1", "--python", output / "tools" / script])
-    report = json.loads((output / "exports/clawd-v03/qa/geometry-validation.json").read_text())
+    report = json.loads((output / "exports/clawd-v04/qa/geometry-validation.json").read_text())
     if not all(report.get(key) for key in ("mesh_gate_passed", "surrogate_fit_gate_passed", "original_input_hashes_unchanged")):
         raise RuntimeError("The final digital validation gates did not pass")
     print(json.dumps({"output": str(output), "digital_gates_passed": True, "physical_validation": "NOT PERFORMED"}))

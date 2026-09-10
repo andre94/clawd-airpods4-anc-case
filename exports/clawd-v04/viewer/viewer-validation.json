@@ -1,0 +1,30 @@
+{
+  "mesh_objects": 4,
+  "gltf_units": "metres",
+  "source_dimensions_mm": [
+    75.77778398990631,
+    26.900000870227814,
+    59.60000213235617
+  ],
+  "contents": [
+    "CLAWD | body",
+    "CLAWD | lid",
+    "PREVIEW ONLY | black paint inside eye",
+    "PREVIEW ONLY | black paint inside eye.001"
+  ],
+  "excluded": [
+    "device",
+    "ring",
+    "pads",
+    "cutters",
+    "references"
+  ],
+  "qualification": "Visualization only; use STL/3MF for printing. Physical validation NOT PERFORMED",
+  "round_trip_mesh_count": 4,
+  "round_trip_dimensions_mm": [
+    75.77778398990631,
+    26.900000870227814,
+    59.60000213235617
+  ],
+  "glb_sha256": "24b28d43407499fafb721d242d1951525fe207c860f9e23edb81d0a9f6de1c1e"
+}

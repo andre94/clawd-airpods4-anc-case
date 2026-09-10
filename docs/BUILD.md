@@ -28,13 +28,23 @@ The sequence is:
 3. Build the v01 cover from its JSON parameters and the source envelopes.
 4. Rebuild the lid with the v02 robust pixel lettering.
 5. Add the v03 diagonal keyring bore and run its digital validation/export gates.
+6. Add the v04 wrap-around coverage, shaped hinge relief and compliant-pad seats;
+   run the new hinge checks and export only the rigid body/lid shells.
 
-Final outputs are in the new build's `models/` and `exports/clawd-v03/` folders.
+Final outputs are in the new build's `models/` and `exports/clawd-v04/` folders.
 The reconstruction can differ at the byte/triangulation level between Blender
 versions; geometry, dimensions and validation results matter, not a promise of
 bit-identical `.blend` or mesh files. A build success is not physical validation.
 
-### Verified clean rebuild
+### Verified v04 clean rebuild
+
+On 10 September 2026, Blender 5.2.1 LTS (build `9e2066aef7ef`) rebuilt v01 through
+v04 using only the included CC BY reference assets. Both final v04 STLs were
+byte-identical to the release meshes and the digital gates passed. See
+[rebuild-validation.json](../exports/clawd-v04/qa/rebuild-validation.json).
+The scene file itself need not be byte-identical. No physical test was performed.
+
+### Historical v03 clean rebuild
 
 On 9 September 2026, a clean rebuild using Blender 5.2.1 LTS (build
 `9e2066aef7ef`) completed all digital gates using only the included CC BY
@@ -49,6 +59,8 @@ it does not promise identical results across Blender versions or physical fit.
   main body, openings, seam, reliefs and initial construction.
 - `models/clawd-v02-parameters.json`: robust rear lettering revision.
 - `models/clawd-v03-parameters.json`: final keyring bore and reference hardware.
+- `models/clawd-v04-parameters.json`: fuller coverage, local access windows,
+  swept hinge relief and compliant-pad seats.
 
 Shared fields repeated in later files document the inherited design; changing
 only a repeated v03 cavity field does **not** rebuild the v01 cavity with that
@@ -68,13 +80,16 @@ with the lid and the printer's feature limits.
 simplified fit-check pair, not the full Clawd prototype. Studio objects and
 keyring hardware are presentation-only. Upstream source collections retain
 their own CC BY license metadata. Restricted donor meshes are absent.
+Collection `10` contains historical v03 shells for before/after renders, not
+print exports. Collection `11` contains illustrative seated pads, not printable
+foam parts. The old fit-check pair does not represent v04 retention.
 
 ## Renders
 
-To regenerate the three v03 keyring views from a rebuilt model:
+To regenerate the v04 views and v03/v04 rear comparison from a rebuilt model:
 
 ```sh
-/path/to/blender --background /path/to/new-empty-build/models/clawd-airpods4-anc-v03.blend --python /path/to/new-empty-build/tools/render_clawd_keyring.py
+/path/to/blender --background /path/to/new-empty-build/models/clawd-airpods4-anc-v04.blend --python /path/to/new-empty-build/tools/render_clawd_coverage.py
 ```
 
 Only body/lid print meshes should be exported for manufacture. Do not export all

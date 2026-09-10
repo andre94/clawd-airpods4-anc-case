@@ -1,0 +1,63 @@
+{
+  "release_status": "UNVALIDATED_FULL_WRAP_AND_PAD_RETENTION_PROTOTYPE",
+  "units": "millimeter; 100 percent scale",
+  "quantity": "ONE body and ONE lid. The 3MF is an alternative to the STL pair. Soft pads and metal hardware are not included.",
+  "files": {
+    "clawd-prototype-body-v04-mm.stl": {
+      "sha256": "68b0e229ab8a57994e0dbac33eb5a605da22ad3bc7f7d637ded78d6dea6a70c5",
+      "bytes": 986384,
+      "quantity": 1
+    },
+    "clawd-prototype-lid-v04-mm.stl": {
+      "sha256": "792823d560232b5fb662c6940378f03faa3ee8497353815fe4cbcbd6b024f13a",
+      "bytes": 526484,
+      "quantity": 1
+    },
+    "clawd-prototype-pair-v04-mm.3mf": {
+      "sha256": "51c68fadc73d11fe3f90dc2460d95d15a23596ece0e28ee6233c8ab36c993f6b",
+      "bytes": 435193
+    }
+  },
+  "round_trip": {
+    "clawd-prototype-body-v04-mm.stl": {
+      "dimensions_mm": [
+        75.77777862548828,
+        26.899999618530273,
+        42.39634323120117
+      ],
+      "non_manifold_edges": 0,
+      "boundary_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume_mm3": 39096.359125488394,
+      "scale_matches_within_0_001_mm": true
+    },
+    "clawd-prototype-lid-v04-mm.stl": {
+      "dimensions_mm": [
+        62.0,
+        26.900001525878906,
+        16.50365447998047
+      ],
+      "non_manifold_edges": 0,
+      "boundary_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume_mm3": 16202.465521816854,
+      "scale_matches_within_0_001_mm": true
+    }
+  },
+  "three_mf_validation": {
+    "unit": "millimeter",
+    "objects": [
+      {
+        "name": "CLAWD body - UNVALIDATED v04",
+        "vertices": 9855,
+        "triangles": 19726
+      },
+      {
+        "name": "CLAWD lid - UNVALIDATED v04",
+        "vertices": 5266,
+        "triangles": 10528
+      }
+    ],
+    "zip_crc_check_passed": true
+  }
+}

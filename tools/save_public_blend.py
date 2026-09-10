@@ -8,13 +8,16 @@ import bpy
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def save_public_copy():
+def save_public_copy(revision="v04"):
+    if revision not in ("v03", "v04"):
+        raise ValueError("Only reviewed v03 and v04 scenes are supported")
+    release = {"v03": "v0.3.0-alpha", "v04": "v0.4.0-alpha"}[revision]
     if not bpy.app.background or not bpy.data.filepath:
-        raise RuntimeError("Open a project v03 model in a separate background Blender process")
+        raise RuntimeError("Open a project model in a separate background Blender process")
     source = Path(bpy.data.filepath).resolve()
-    destination = ROOT / "models/clawd-airpods4-anc-v03.blend"
+    destination = ROOT / f"models/clawd-airpods4-anc-{revision}.blend"
     if source.name != destination.name or destination.exists():
-        raise RuntimeError("Expected v03 source and a new public destination; never overwrite either")
+        raise RuntimeError("Expected matching source revision and a new public destination; never overwrite either")
     if abs(bpy.context.scene.unit_settings.scale_length - 0.001) > 1e-8:
         raise RuntimeError("Expected native millimetre model coordinates")
     validator = runpy.run_path(str(ROOT / "tools/validate_clawd_case.py"))
@@ -50,19 +53,19 @@ def save_public_copy():
         if validator["geometry_digest"](bpy.data.objects[name]) != digest:
             raise RuntimeError(f"Public cleanup changed protected geometry: {name}")
     scene = bpy.context.scene
-    scene["public_release"] = "v0.3.0-alpha; unvalidated prototype"
+    scene["public_release"] = f"{release}; unvalidated prototype"
     scene["license_notice"] = "CC-BY-SA-4.0 project adaptations, CC-BY-4.0 source assets; see LICENSE.md and THIRD_PARTY_NOTICES.md"
     scene["restricted_donor_geometry_included"] = False
-    scene["source_revision"] = "v03"
-    scene.render.filepath = "//../docs/images/clawd-v03-preview.png"
+    scene["source_revision"] = revision
+    scene.render.filepath = f"//../docs/images/clawd-{revision}-preview.png"
     bpy.ops.file.pack_all()
     for image in bpy.data.images:
         if image.source == "FILE" and image.packed_file:
             image.filepath = "//../assets/reference/airpods-4/textures/" + Path(image.filepath).name
     bpy.ops.wm.save_as_mainfile(filepath=str(destination), relative_remap=False)
     audit = {
-        "release": "v0.3.0-alpha",
-        "source_revision": "v03",
+        "release": release,
+        "source_revision": revision,
         "geometry_sha256_unchanged": digests,
         "removed_object_count": len(removed),
         "remaining_donor_objects": 0,
@@ -70,7 +73,7 @@ def save_public_copy():
         "native_coordinates": "millimetres; scene scale_length 0.001",
         "physical_validation": "NOT PERFORMED",
     }
-    (ROOT / "exports/clawd-v03/qa/publication-audit.json").write_text(json.dumps(audit, indent=2) + "\n")
+    (ROOT / f"exports/clawd-{revision}/qa/publication-audit.json").write_text(json.dumps(audit, indent=2) + "\n")
     return audit
 
 

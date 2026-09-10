@@ -4,21 +4,22 @@ Custodia protettiva esterna, in due parti, per il case di ricarica **AirPods 4
 con ANC**. È un progetto fan-made ispirato a Clawd, non un prodotto Apple o
 Anthropic e non un sostituto del case elettronico originale.
 
-**v03 / v0.3.0-alpha: prototipo non ancora verificato fisicamente.** I controlli
+**v04 / v0.4.0-alpha: prototipo non ancora verificato fisicamente.** I controlli
 digitali non garantiscono dimensioni finite, tenuta del coperchio, ricarica o
 resistenza del foro. Non affidargli il trasporto degli AirPods prima delle prove.
 
 ## Link del progetto
 
-Stato delle pubblicazioni verificato il **9 settembre 2026**:
+Registro del **10 settembre 2026**: GitHub contiene i sorgenti v04 di riferimento;
+le altre piattaforme restano v03 finché l'aggiornamento non viene verificato.
 
 | Piattaforma | Link | Stato e contenuti |
 | --- | --- | --- |
 | GitHub | [Repository sorgenti](https://github.com/andre94/clawd-airpods4-anc-case) | Pubblico; CAD modificabile, script e documentazione di riferimento. |
-| GitHub Releases | [v0.3.0-alpha](https://github.com/andre94/clawd-airpods4-anc-case/releases/tag/v0.3.0-alpha) | Prerelease pubblica; archivio sorgenti e file per la stampa. |
-| Printables | [Pagina del modello](https://www.printables.com/model/1837773-clawd-airpods-4-anc-case-open-cad-v03-wip) | Pubblico; due STL, 3MF con due oggetti, file Blender modificabile e rendering. |
-| Sketchfab | [Visualizzatore 3D interattivo](https://sketchfab.com/3d-models/clawd-airpods-4-anc-case-open-cad-v03-wip-1aea2f19414b48d38c48bbdb90f80ad6) | Pubblico; visualizzazione colorata scaricabile, non un file per la stampa. |
-| Thingiverse | [Bozza salvata](https://www.thingiverse.com/thing:7407403) · [Editor del proprietario](https://www.thingiverse.com/thing:7407403/edit) | Non ancora pubblico; il sito impone 24 ore di attesa ai nuovi account. Bozza ed editor richiedono il login del proprietario. |
+| GitHub Releases | [Release e prerelease](https://github.com/andre94/clawd-airpods4-anc-case/releases) | Archivi sorgenti e file per la stampa versionati; v0.3.0-alpha conservata come storico. |
+| Printables | [Pagina del modello](https://www.printables.com/model/1837773-clawd-airpods-4-anc-case-open-cad-v03-wip) | Pubblico v03; aggiornamento v04 in attesa. Due STL, 3MF, file Blender e rendering. |
+| Sketchfab | [Visualizzatore 3D interattivo](https://sketchfab.com/3d-models/clawd-airpods-4-anc-case-open-cad-v03-wip-1aea2f19414b48d38c48bbdb90f80ad6) | Pubblico v03; aggiornamento v04 in attesa. Non è un file per la stampa. |
+| Thingiverse | [Bozza salvata](https://www.thingiverse.com/thing:7407403) · [Editor del proprietario](https://www.thingiverse.com/thing:7407403/edit) | Bozza v03; aggiornamento v04 e visibilità pubblica non confermati. La pubblicazione iniziale era bloccata dall'attesa per i nuovi account. Login del proprietario richiesto. |
 
 La pubblicazione non equivale a una verifica fisica. La pubblicazione su
 Thingiverse non è programmata automaticamente: aggiornare questo stato datato
@@ -26,7 +27,7 @@ dopo l'effettiva messa online.
 
 ## Cosa scaricare
 
-- Un corpo e un coperchio da `exports/clawd-v03/clawd-prototype/`.
+- Un corpo e un coperchio da `exports/clawd-v04/clawd-prototype/`.
 - Scegliere i due STL **oppure** il 3MF contenente entrambi: non stampare duplicati.
 - Unità millimetri, scala 100%. Il 3MF non contiene un profilo macchina validato.
 - Il file Blender modificabile è in `models/`; parametri e script sono inclusi.
@@ -35,6 +36,23 @@ Corpo: circa **75,78 × 26,90 × 42,40 mm**; coperchio: **62 × 26,90 × 16,50 m
 Il foro portachiavi diagonale ha diametro nominale 4 mm. L'incisione
 `andreabalbo.com` è profonda nominalmente 1 mm. Dispositivo e anello nei rendering
 sono riferimenti visivi, non pezzi da stampare.
+
+## Novità v04 e ritenzione
+
+Maggiore copertura posteriore con scarico sagomato per la cerniera, finestra
+frontale delimitata e aperture separate per USB-C e altoparlanti. Non è una
+custodia sigillata o impermeabile. Sagoma, incisione e foro restano invariati.
+
+Servono **cinque inserti morbidi separati**, non stampati: due sul corpo, due
+ai lati del coperchio e uno nel tetto. Le sedi hanno un gioco normale nominale
+di 0,65 mm. Schiuma di silicone morbida da 0,80 mm è solo uno spessore iniziale
+da provare, non una specifica verificata. Senza inserti i gusci rigidi restano
+privi di ritenzione. Se necessario, valutare un inserto biadesivo rimovibile nel
+tetto, dopo aver verificato compatibilità e rimozione; niente colla permanente.
+
+Il controllo digitale di 116 posizioni da 0 a 115° non rileva collisioni con il
+simulacro e gli inserti illustrativi. **Non è una prova fisica di apertura senza
+attrito né di tenuta.** [Dettagli v04](clawd-design-v04.md).
 
 ## Come procedere
 

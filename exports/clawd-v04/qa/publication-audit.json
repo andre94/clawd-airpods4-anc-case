@@ -1,0 +1,15 @@
+{
+  "release": "v0.4.0-alpha",
+  "source_revision": "v04",
+  "geometry_sha256_unchanged": {
+    "CLAWD | body": "21560813a069023961eba6db17c5ca5f40aa8737387f55ef79695ae24fd2e86d",
+    "CLAWD | lid": "eb13df3e2b7880b1523b96f2dd7420bb9dcab8a5439e36495befd75a72afefd0",
+    "FIT CHECK | body": "fe053fd435fc809c9542ec731b32b7225a2f60a5aaf675f8e5f9584963bcc811",
+    "FIT CHECK | lid": "8d8787e27fcdc037c5614a8eb9fc93b1d322f696a4bb1701eb54ca0e625fc13e"
+  },
+  "removed_object_count": 11,
+  "remaining_donor_objects": 0,
+  "external_linked_libraries": 0,
+  "native_coordinates": "millimetres; scene scale_length 0.001",
+  "physical_validation": "NOT PERFORMED"
+}

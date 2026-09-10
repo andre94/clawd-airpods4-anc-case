@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-10",
+  "blender_version": "5.2.1 LTS",
+  "blender_build": "9e2066aef7ef",
+  "source_scope": "Included CC BY reference assets only; no restricted donor or private workspace dependencies",
+  "digital_gates": {
+    "mesh_gate_passed": true,
+    "surrogate_fit_gate_passed": true,
+    "original_input_hashes_unchanged": true
+  },
+  "dense_hinge_screen": {
+    "poses": 116,
+    "step_degrees": 1,
+    "range_degrees": [
+      0,
+      115
+    ],
+    "collisions": [],
+    "qualification": "Discrete surface collision screen on calibrated visual surrogates and positioned ring; real hinge and hardware motion remain unqualified"
+  },
+  "files": {
+    "exports/clawd-v04/clawd-prototype/clawd-prototype-body-v04-mm.stl": {
+      "release_sha256": "68b0e229ab8a57994e0dbac33eb5a605da22ad3bc7f7d637ded78d6dea6a70c5",
+      "rebuilt_sha256": "68b0e229ab8a57994e0dbac33eb5a605da22ad3bc7f7d637ded78d6dea6a70c5",
+      "byte_identical": true
+    },
+    "exports/clawd-v04/clawd-prototype/clawd-prototype-lid-v04-mm.stl": {
+      "release_sha256": "792823d560232b5fb662c6940378f03faa3ee8497353815fe4cbcbd6b024f13a",
+      "rebuilt_sha256": "792823d560232b5fb662c6940378f03faa3ee8497353815fe4cbcbd6b024f13a",
+      "byte_identical": true
+    }
+  },
+  "physical_validation": "NOT PERFORMED"
+}

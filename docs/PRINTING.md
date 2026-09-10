@@ -1,12 +1,12 @@
-# Printing the v03 prototype
+# Printing the v04 prototype
 
 **Not physically validated. Request a supplier-specific technical review before
 ordering. An automatic quote or a watertight mesh is not manufacturing approval.**
 
 ## Quantity, units and orientation
 
-Print one `clawd-prototype-body-v03-mm.stl` and one
-`clawd-prototype-lid-v03-mm.stl`, or use the alternative two-part 3MF. Do not
+Print one `clawd-prototype-body-v04-mm.stl` and one
+`clawd-prototype-lid-v04-mm.stl`, or use the alternative two-part 3MF. Do not
 combine both options into an order. All dimensions are in mm at 100% scale.
 The exported lid is reoriented for separate manufacture; the native blend
 shows its assembled position. The printer should choose build orientation,
@@ -42,15 +42,34 @@ nominal clearance. Readable rear lettering is already part of the lid mesh.
 - Whether any repair, resizing, thickening or support cleanup changes the fit.
   Obtain agreement before modifying the CAD or rescaling a part.
 
+## Separate retention pads
+
 Neither the outer body nor the separate lid has a qualified positive lock.
-Removable liner/pad tuning may be needed, but no pad thickness is specified or
-validated yet. Do not force a tight print onto the device, lever against its
-hinge, or push through the USB-C port to remove it. Stop if it binds or scratches.
+Bare rigid shells are clearance fits and remain unretained. v04 requires trial
+compliant pads, supplied separately: two 8 × 8 mm body-side seats, two 8 × 5 mm
+lid-side seats and one 16 × 7 mm lid-roof seat. These footprints are projected
+dimensions on curved surfaces, not flattened cutting templates.
+
+Seats have a nominal 0.65 mm normal gap to the visual device surrogate. Start
+with supplier-approved soft, non-marking silicone foam or equivalent, using
+0.80 mm uncompressed thickness only as an initial trial. Adhesive backing,
+curvature, print tolerances and material compression all affect the fit. No pad
+thickness, retention force or adhesive is physically qualified.
+
+Pads initially bond to the cover and grip the device by friction. If lid
+retention is insufficient, trial a finish-compatible removable double-sided
+roof pad only after checking surface safety and removal. Do not use permanent
+glue. Do not force a tight print onto the device, lever against its hinge, or
+push through the USB-C port to remove it. Stop if it binds or scratches.
+
+The five dark pad previews in the Blender file are illustrative seated envelopes,
+not foam deformation simulations or printable hardware. See the
+[v04 design notes](clawd-design-v04.md) for placement and caveats.
 
 ## Access and charging
 
 The model includes geometric openings for front access, hinge movement and a
-bottom USB-C / ANC-speaker service area. Opening geometry is not evidence that
+14 × 8 mm USB-C window plus two 6 × 4 mm ANC-speaker windows. Opening geometry is not evidence that
 every plug, tap gesture or charging pad works. Qi / Apple Watch charging,
 alignment and temperature need real-device checks. No magnets or conductive
 inserts are specified. Hardware placement must not impede charging or scratch

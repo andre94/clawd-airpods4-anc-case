@@ -1,0 +1,224 @@
+{
+  "release_status": "UNVALIDATED_FULL_WRAP_AND_PAD_RETENTION_PROTOTYPE",
+  "baseline_sha256": "75779584053e59fa13efa685ce73c1d23914725f6455dff8a8faa3c5d5f01b78",
+  "parts": {
+    "body": {
+      "geometry_sha256": "21560813a069023961eba6db17c5ca5f40aa8737387f55ef79695ae24fd2e86d",
+      "vertices": 9855,
+      "triangles": 19726,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "non_manifold_edges": 0,
+      "inconsistently_oriented_edges": 0,
+      "loose_vertices": 0,
+      "degenerate_faces_below_1e-10_mm2": 0,
+      "signed_volume_mm3": 39096.35916931913,
+      "surface_area_mm2": 15677.250619859293,
+      "dimensions_mm": [
+        75.77777862548828,
+        26.899999618530273,
+        42.39634323120117
+      ],
+      "nonadjacent_triangle_overlap_candidates": 0,
+      "overlap_candidate_examples": []
+    },
+    "lid": {
+      "geometry_sha256": "eb13df3e2b7880b1523b96f2dd7420bb9dcab8a5439e36495befd75a72afefd0",
+      "vertices": 5266,
+      "triangles": 10528,
+      "connected_components": 1,
+      "boundary_edges": 0,
+      "non_manifold_edges": 0,
+      "inconsistently_oriented_edges": 0,
+      "loose_vertices": 0,
+      "degenerate_faces_below_1e-10_mm2": 0,
+      "signed_volume_mm3": 16202.46559112821,
+      "surface_area_mm2": 7245.868649174326,
+      "dimensions_mm": [
+        62.0,
+        26.899999618530273,
+        16.50365447998047
+      ],
+      "nonadjacent_triangle_overlap_candidates": 0,
+      "overlap_candidate_examples": []
+    }
+  },
+  "pad_seats": {
+    "body": [
+      {
+        "name": "body left side",
+        "sample_count": 9,
+        "axis_gap_range_mm": [
+          0.6501064300537109,
+          0.6654186248779297
+        ],
+        "minimum_axis_wall_mm": 12.190212799072265,
+        "qualification": "Axis-aligned sample rays over the seat; not a global minimum, finished-pad specification or force calculation"
+      },
+      {
+        "name": "body right side",
+        "sample_count": 9,
+        "axis_gap_range_mm": [
+          0.6501045227050781,
+          0.6654224395751953
+        ],
+        "minimum_axis_wall_mm": 12.190215660095214,
+        "qualification": "Axis-aligned sample rays over the seat; not a global minimum, finished-pad specification or force calculation"
+      }
+    ],
+    "lid": [
+      {
+        "name": "lid left side",
+        "sample_count": 9,
+        "axis_gap_range_mm": [
+          0.7020950317382812,
+          0.8223552703857422
+        ],
+        "minimum_axis_wall_mm": 6.5426474342346195,
+        "qualification": "Axis-aligned sample rays over the seat; not a global minimum, finished-pad specification or force calculation"
+      },
+      {
+        "name": "lid right side",
+        "sample_count": 9,
+        "axis_gap_range_mm": [
+          0.7020778656005859,
+          0.8223552703857422
+        ],
+        "minimum_axis_wall_mm": 6.542648864746094,
+        "qualification": "Axis-aligned sample rays over the seat; not a global minimum, finished-pad specification or force calculation"
+      },
+      {
+        "name": "lid roof",
+        "sample_count": 9,
+        "axis_gap_range_mm": [
+          0.6501073837280273,
+          0.6615705490112305
+        ],
+        "minimum_axis_wall_mm": 2.1000409851074218,
+        "qualification": "Axis-aligned sample rays over the seat; not a global minimum, finished-pad specification or force calculation"
+      }
+    ]
+  },
+  "dense_hinge_screen": {
+    "poses": 116,
+    "step_degrees": 1,
+    "range_degrees": [
+      0,
+      115
+    ],
+    "collisions": [],
+    "qualification": "Discrete surface collision screen on calibrated visual surrogates and positioned ring; real hinge and hardware motion remain unqualified"
+  },
+  "projected_exposure": {
+    "grid_step_mm": 0.5,
+    "views": {
+      "front": {
+        "projected_device_area_mm2": 2109.5,
+        "exposed_area_mm2": {
+          "v03": 118.5,
+          "v04": 69.25
+        },
+        "exposure_reduction_percent": 41.561181434599156
+      },
+      "rear": {
+        "projected_device_area_mm2": 2109.5,
+        "exposed_area_mm2": {
+          "v03": 562.0,
+          "v04": 343.0
+        },
+        "exposure_reduction_percent": 38.967971530249116
+      },
+      "bottom": {
+        "projected_device_area_mm2": 957.25,
+        "exposed_area_mm2": {
+          "v03": 359.25,
+          "v04": 158.25
+        },
+        "exposure_reduction_percent": 55.94989561586638
+      }
+    },
+    "qualification": "Orthographic ray samples of the closed surrogate, excluding removable pads. Not true surface area, full 3D coverage, sealing or protection certification."
+  },
+  "protected_geometry": {
+    "CUT | body insertion clearance": true,
+    "CUT | lid insertion clearance": true,
+    "CUT | robust pixel andreabalbo.com": true,
+    "CUT | v03 keyring bore with rounded entries": true,
+    "REFERENCE | calibrated body envelope, not metrology": true,
+    "REFERENCE | calibrated lid envelope, not metrology": true,
+    "FIT CHECK | body": true,
+    "FIT CHECK | lid": true
+  },
+  "physical_tests_performed": [],
+  "mesh_gate_passed": true,
+  "export": {
+    "release_status": "UNVALIDATED_FULL_WRAP_AND_PAD_RETENTION_PROTOTYPE",
+    "units": "millimeter; 100 percent scale",
+    "quantity": "ONE body and ONE lid. The 3MF is an alternative to the STL pair. Soft pads and metal hardware are not included.",
+    "files": {
+      "clawd-prototype-body-v04-mm.stl": {
+        "sha256": "68b0e229ab8a57994e0dbac33eb5a605da22ad3bc7f7d637ded78d6dea6a70c5",
+        "bytes": 986384,
+        "quantity": 1
+      },
+      "clawd-prototype-lid-v04-mm.stl": {
+        "sha256": "792823d560232b5fb662c6940378f03faa3ee8497353815fe4cbcbd6b024f13a",
+        "bytes": 526484,
+        "quantity": 1
+      },
+      "clawd-prototype-pair-v04-mm.3mf": {
+        "sha256": "51c68fadc73d11fe3f90dc2460d95d15a23596ece0e28ee6233c8ab36c993f6b",
+        "bytes": 435193
+      }
+    },
+    "round_trip": {
+      "clawd-prototype-body-v04-mm.stl": {
+        "dimensions_mm": [
+          75.77777862548828,
+          26.899999618530273,
+          42.39634323120117
+        ],
+        "non_manifold_edges": 0,
+        "boundary_edges": 0,
+        "degenerate_faces": 0,
+        "signed_volume_mm3": 39096.359125488394,
+        "scale_matches_within_0_001_mm": true
+      },
+      "clawd-prototype-lid-v04-mm.stl": {
+        "dimensions_mm": [
+          62.0,
+          26.900001525878906,
+          16.50365447998047
+        ],
+        "non_manifold_edges": 0,
+        "boundary_edges": 0,
+        "degenerate_faces": 0,
+        "signed_volume_mm3": 16202.465521816854,
+        "scale_matches_within_0_001_mm": true
+      }
+    },
+    "three_mf_validation": {
+      "unit": "millimeter",
+      "objects": [
+        {
+          "name": "CLAWD body - UNVALIDATED v04",
+          "vertices": 9855,
+          "triangles": 19726
+        },
+        {
+          "name": "CLAWD lid - UNVALIDATED v04",
+          "vertices": 5266,
+          "triangles": 10528
+        }
+      ],
+      "zip_crc_check_passed": true
+    }
+  },
+  "preserved_model_files": {
+    "models/clawd-airpods4-anc-v02.blend": true,
+    "models/clawd-airpods4-anc-v03.blend": true,
+    "models/clawd-airpods4-anc-v01.blend": true,
+    "models/clawd-airpods4-anc-reference-study-v01.blend": true
+  },
+  "original_inputs_unchanged": true
+}
