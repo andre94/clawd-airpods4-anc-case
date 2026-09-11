@@ -1,5 +1,20 @@
 # Changelog
 
+## v04-bottom-access — 2026-09-11
+
+Source and website update on top of v0.4.0-alpha; no new release tag.
+**Physically unvalidated prototype.**
+
+- Removed the two narrow bottom bridges, joining USB-C and side service windows.
+- Matched the approved study geometry exactly; lid and all other meshes unchanged.
+- Added current Blender, STL, 3MF and viewer files, reproducible patch/export
+  script and digital validation report. Existing baseline files remain historical.
+- Body remains manifold; all 18 sampled access rays pass. STL round trips confirm
+  millimetre dimensions, and the 3MF contains two objects with explicit mm units.
+- Replaced old downloads on Printables and Thingiverse, activated the new
+  Sketchfab viewer, and retained existing uploaded gallery renders.
+- Actual-device alignment, acoustics, cable clearance and strength remain untested.
+
 ## v0.4.0-alpha — 2026-09-10
 
 Design v04 adds fuller coverage and explicit compliant-pad retention provisions.

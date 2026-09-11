@@ -1,6 +1,7 @@
 {
-  "release": "v0.4.0-alpha",
-  "design_revision": "v04",
+  "release": "unreleased",
+  "baseline_release": "v0.4.0-alpha",
+  "design_revision": "v04-bottom-access",
   "files": {
     ".github/ISSUE_TEMPLATE/fit-report.md": {
       "sha256": "edd8429ec957ce382ecfba28c4857b8e2b747738d2a7dcb722fdaa1c7aee3c6a",
@@ -15,8 +16,8 @@
       "bytes": 69
     },
     "CHANGELOG.md": {
-      "sha256": "0ddf03ce60372e72462b2999bca1d0e2c179d55f3c2555a4c7d47d2f50a4f042",
-      "bytes": 1981
+      "sha256": "660e131b0f94c175606d0b32e3f9c4a92badab2668d017fc4bdee63eddd824a3",
+      "bytes": 2843
     },
     "CONTRIBUTING.md": {
       "sha256": "acb94cf289c5d3ed4f615451727baa9a95f1f84ac95b98ffbf6b7059d76596bd",
@@ -39,8 +40,8 @@
       "bytes": 1069
     },
     "README.md": {
-      "sha256": "1ed289f3efbf5c2abfcc379c2a40c1304ba5bd231bbbcca7292de4f6922ec613",
-      "bytes": 7400
+      "sha256": "025bd2d9e94734259ede42f40a3a84ebe8f998e696e1fd2892a15454fc7e5981",
+      "bytes": 8166
     },
     "THIRD_PARTY_NOTICES.md": {
       "sha256": "cbcb8b3475ca0674c65a14711d2ec5f6cdd2e543515e83014d4b0f2696c047f8",
@@ -87,20 +88,24 @@
       "bytes": 6284
     },
     "docs/BUILD.md": {
-      "sha256": "9270413ff93810bef3bd9be342263ba0ecc1d8696e2878826af5ed040d40ef4a",
-      "bytes": 4920
+      "sha256": "e8ca38fadc80058f020a9c7147e35212a5e07e1e7c1c44d6153a7b8d3e6c5dd9",
+      "bytes": 6087
     },
     "docs/PRINTING.md": {
-      "sha256": "088dc3b29d0de44bc54c31c221dacfbf25182a1f275f6d70c83b627dd7e4fb57",
-      "bytes": 4359
+      "sha256": "3653f6c187b8e5c77be40c2210a525a0f983749badb3868aad57af7269ec9538",
+      "bytes": 4563
     },
     "docs/QUALIFICATION.md": {
       "sha256": "8f303698910b32fa8dc6ed11e88fcd9c257dba214ac1cf21d13cda70af217a9f",
       "bytes": 3295
     },
     "docs/README.it.md": {
-      "sha256": "42a4e78b965b08dc95de0e967428f450c55849e78ffa6566cab4879bfecad251",
-      "bytes": 4877
+      "sha256": "dc79d74adf102b51634999b3535b6a3359d446e75800c76cdb90b3ff548dddf6",
+      "bytes": 4977
+    },
+    "docs/clawd-bottom-access.md": {
+      "sha256": "f5b608dcf713c3197b2406ebda5ff55a384ad2fb28ec5811c06d6a8ca378a2cf",
+      "bytes": 2193
     },
     "docs/clawd-design-v04.md": {
       "sha256": "34a347581cb46aa2c2593328287b0f2ab44f5cc402ba73b2a10d8033ae69c834",
@@ -242,9 +247,33 @@
       "sha256": "07b8f9fdfd6336fb0db47c7e12b094bda830fa9b93ff9376fa65cfbab668c27b",
       "bytes": 1752
     },
+    "exports/v04-bottom-access/clawd-airpods4-anc-v04-bottom-access-viewer.glb": {
+      "sha256": "6a23dd0b8a395fbde19066d8962b74216723195096023abd594d951fcb97e91b",
+      "bytes": 2120592
+    },
+    "exports/v04-bottom-access/clawd-prototype-body-v04-bottom-access-mm.stl": {
+      "sha256": "b31852614a593b0a79a89a106d116f4f78b0df52edf70e3ec3a915ae93f2140d",
+      "bytes": 988984
+    },
+    "exports/v04-bottom-access/clawd-prototype-lid-v04-bottom-access-mm.stl": {
+      "sha256": "c10d83569fa841f2f5ac92dd429fbc1c6ab439726db36a6e515c90017075fdea",
+      "bytes": 526484
+    },
+    "exports/v04-bottom-access/clawd-prototype-pair-v04-bottom-access-mm.3mf": {
+      "sha256": "9719900227070fcba136f813b4f44a3f44c61c2dc18d6608d30623e741e2e834",
+      "bytes": 434942
+    },
+    "exports/v04-bottom-access/validation.json": {
+      "sha256": "bdca4c9f3e0b629a163d63defe1b44e754b690bf8162f2599b33d7df3fbfefde",
+      "bytes": 2506
+    },
     "models/clawd-airpods4-anc-v03.blend": {
       "sha256": "2ce22a3cdbfd0d33c73b1af0a71eab9650b97a834c3bc95749c5933d52c4315c",
       "bytes": 8277136
+    },
+    "models/clawd-airpods4-anc-v04-bottom-access.blend": {
+      "sha256": "dd3cc1bc077500bb793af621807f035f2ae4031f165360f0a563a61d217f0585",
+      "bytes": 9634718
     },
     "models/clawd-airpods4-anc-v04.blend": {
       "sha256": "728727cffbd6af039893a7297317f6d433c57f4e500eeced761ea2c60aaa4e64",
@@ -279,8 +308,8 @@
       "bytes": 17609
     },
     "tools/check_release.py": {
-      "sha256": "31c15525dbef22173e225ba41fc7b4e3ef13cd5be4313dc9e303f3a4634eaae0",
-      "bytes": 5226
+      "sha256": "b9d8ddef130024aeedcf7e9d1d958bdefdf1fe4b292fa4cd23c584be5deac444",
+      "bytes": 5755
     },
     "tools/clawd_branding.py": {
       "sha256": "715c2c30f92b70f50f0267ddf6734b81edbda71667aff747e2a854a3f5cc6109",
@@ -289,6 +318,10 @@
     "tools/diagnose_clawd_walls.py": {
       "sha256": "e5a79b2ca1f8b996459a963834e17a2112c3c00053273bd740b9b8ff62942505",
       "bytes": 8536
+    },
+    "tools/export_clawd_bottom_access.py": {
+      "sha256": "af6a4b2189c4aeb921ab1ac578ad1067ad47a2cfa29d0789bd7e95673b6ed41f",
+      "bytes": 6282
     },
     "tools/export_clawd_case.py": {
       "sha256": "228d02e58f397744840fddb1f9e1c71a5d6367e79c117ffda38845921d533848",

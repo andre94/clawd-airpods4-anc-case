@@ -2,13 +2,13 @@
 
 **Open, editable CAD for a Clawd-inspired protective cover — not just an STL.**
 
-[Italiano](docs/README.it.md) · [Print files](exports/clawd-v04/clawd-prototype/) ·
-[Editable Blender source](models/clawd-airpods4-anc-v04.blend) ·
+[Italiano](docs/README.it.md) · [Print files](exports/v04-bottom-access/) ·
+[Editable Blender source](models/clawd-airpods4-anc-v04-bottom-access.blend) ·
 [Build from source](docs/BUILD.md) · [Licenses and credits](LICENSE.md)
 
 ![Illustrative v04 render with terracotta finish and a reference metal split ring](docs/images/clawd-v04-front.png)
 
-> **v0.4.0-alpha / design v04 — WORK IN PROGRESS.** No physical print or
+> **v04-bottom-access — WORK IN PROGRESS.** No physical print or
 > actual-device fit test has been completed. Digital mesh and surrogate
 > clearance checks are not proof of fit, retention, charging performance or
 > keyring strength. Do not treat this as a production-ready product or trust
@@ -18,21 +18,28 @@ v04 adds fuller wrap-around coverage and **five seats for separate soft retentio
 pads**. The pads are required trial hardware, not printed parts. Bare rigid shells
 remain unretained. [Changes, pad guidance and digital checks →](docs/clawd-design-v04.md)
 
+**11 September 2026 update:** removed the two bottom bridges between USB-C and
+the side service windows. The lid and all other mesh geometry are unchanged.
+Use the `v04-bottom-access` downloads, not the historical v03/v04 exports.
+The `v0.4.0-alpha` tag remains the earlier baseline; no new release tag is created.
+[Bottom-access changes and checks →](docs/clawd-bottom-access.md)
+
 ## Project links
 
-Publication record for **10 September 2026**. GitHub is the canonical v04 source;
-external mirrors still list v03 until their updates are explicitly verified:
+Publication record for **11 September 2026**. The three website updates were
+saved and their current file lists or active viewer checked after reloading:
 
 | Platform | Link | Status and contents |
 | --- | --- | --- |
 | GitHub | [Source repository](https://github.com/andre94/clawd-airpods4-anc-case) | Public; canonical editable CAD, scripts and documentation. |
-| GitHub Releases | [Releases and prereleases](https://github.com/andre94/clawd-airpods4-anc-case/releases) | Versioned source archives and print exports; v0.3.0-alpha retained as history. |
-| Printables | [Model listing](https://www.printables.com/model/1837773-clawd-airpods-4-anc-case-open-cad-v03-wip) | Public v03; v04 mirror update pending. Two STLs, two-object 3MF, editable Blender file and renders. |
-| Sketchfab | [Interactive 3D viewer](https://sketchfab.com/3d-models/clawd-airpods-4-anc-case-open-cad-v03-wip-1aea2f19414b48d38c48bbdb90f80ad6) | Public v03; v04 viewer update pending. Downloadable visualization, not a print file. |
-| Thingiverse | [Saved draft](https://www.thingiverse.com/thing:7407403) · [Owner editor](https://www.thingiverse.com/thing:7407403/edit) | v03 saved draft; v04 update and public visibility not confirmed. The original publication was blocked by the new-account waiting period. Owner login required. |
+| GitHub Releases | [Releases and prereleases](https://github.com/andre94/clawd-airpods4-anc-case/releases) | v0.4.0-alpha is the original baseline, before the bottom-access update on main. Earlier releases remain historical artifacts. |
+| Printables | [Model files](https://www.printables.com/model/1837773-clawd-airpods-4-anc-case-open-cad-v04-wip/files) | Published v04-bottom-access: two STLs, two-object 3MF and editable Blender file. Old downloads replaced; gallery renders kept. |
+| Sketchfab | [Interactive 3D viewer](https://sketchfab.com/3d-models/clawd-airpods-4-anc-case-open-cad-v04-wip-1aea2f19414b48d38c48bbdb90f80ad6) | New bottom-access GLB activated. Downloadable visualization, not a print file. |
+| Thingiverse | [Model files](https://www.thingiverse.com/thing:7407403/files) | Saved v04-bottom-access: two STLs, two-object 3MF and source ZIP. Displays the Work in Progress banner, not an unpublished-draft banner. |
 
-Publication does not mean physical validation. Thingiverse publication is not
-scheduled automatically; this dated status must be updated after it goes live.
+Publication does not mean physical validation. Existing gallery renders were
+kept; they do not show the underside change. Original v03/v04 files remain in
+Git history and their versioned repository folders, not the current site downloads.
 
 ## What it is
 
@@ -45,7 +52,7 @@ electronics project or certified protective accessory.
 - Rear `andreabalbo.com` pixel engraving, nominally 1.0 mm deep.
 - A rounded, diagonal Ø4 mm bore on the viewer-right block for a metal split ring.
 - Fuller rear wrapping with shaped hinge relief, a bounded front window,
-  separate USB-C and two ANC-speaker openings.
+  and joined USB-C / side service openings.
 - Five compliant-pad seats: two body sides, two lid sides and one lid roof.
 - Terracotta/orange with black eyes is a finish reference, not a matched material color.
 
@@ -60,7 +67,7 @@ All gallery images are CAD renders, not photographs of a tested print.
 ## Start here
 
 1. Read [PRINTING.md](docs/PRINTING.md) before paying for a print.
-2. Download **one body + one lid** from `exports/clawd-v04/clawd-prototype/`.
+2. Download **one body + one lid** from `exports/v04-bottom-access/`.
    Use **either the two STLs or the two-part 3MF**, not both sets.
 3. Select millimetres and 100% scale. Ask your printer to review walls, cavity
    tolerance, engraving and keyring geometry for its specific process.
@@ -83,8 +90,8 @@ The 3MF contains meshes and explicit millimetre units, **not a validated printer
 
 ## Source and remixing
 
-Open `models/clawd-airpods4-anc-v04.blend` in Blender **5.2.1 LTS** (the version
-used for this release). The file retains print parts, masters, cutters, fit-check
+Open `models/clawd-airpods4-anc-v04-bottom-access.blend` in Blender **5.2.1 LTS**
+(the version used for this update). The file retains print parts, masters, cutters, fit-check
 parts, credited visual references and presentation objects in named collections.
 One Blender coordinate unit represents 1 mm; scene `scale_length` is 0.001.
 
@@ -93,9 +100,13 @@ rebuild needs Blender and Python, not Codex, Claude Code or a running MCP server
 
 ```sh
 python3 tools/rebuild.py --blender /path/to/blender --output /path/to/new-empty-build
+/path/to/blender --background /path/to/new-empty-build/models/clawd-airpods4-anc-v04.blend \
+  --python-exit-code 1 --python /path/to/new-empty-build/tools/export_clawd_bottom_access.py
 ```
 
-See [BUILD.md](docs/BUILD.md) for the v01 → v02 → v03 → v04 parameter dependencies,
+The first command rebuilds the original v04 baseline; the second applies and
+exports the approved bottom-access update in that new build directory.
+See [BUILD.md](docs/BUILD.md) for the construction-stage dependencies,
 supported lettering and reproducibility limits. Editing JSON does **not** update
 the already-exported meshes automatically. Regenerate and revalidate changes.
 

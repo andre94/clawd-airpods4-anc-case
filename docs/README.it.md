@@ -4,30 +4,34 @@ Custodia protettiva esterna, in due parti, per il case di ricarica **AirPods 4
 con ANC**. È un progetto fan-made ispirato a Clawd, non un prodotto Apple o
 Anthropic e non un sostituto del case elettronico originale.
 
-**v04 / v0.4.0-alpha: prototipo non ancora verificato fisicamente.** I controlli
+**v04-bottom-access: prototipo non ancora verificato fisicamente.** I controlli
 digitali non garantiscono dimensioni finite, tenuta del coperchio, ricarica o
 resistenza del foro. Non affidargli il trasporto degli AirPods prima delle prove.
 
+Aggiornamento dell'11 settembre 2026: rimossi i due ponti inferiori tra USB-C e
+le finestre laterali. Coperchio e tutte le altre geometrie restano invariati.
+Il tag `v0.4.0-alpha` conserva la versione precedente; non viene creato un nuovo
+tag. [Modifiche e controlli](clawd-bottom-access.md).
+
 ## Link del progetto
 
-Registro del **10 settembre 2026**: GitHub contiene i sorgenti v04 di riferimento;
-le altre piattaforme restano v03 finché l'aggiornamento non viene verificato.
+Registro dell'**11 settembre 2026**: aggiornamenti salvati e verificati sulle
+tre piattaforme, con nuovi file `v04-bottom-access` e rendering esistenti mantenuti.
 
 | Piattaforma | Link | Stato e contenuti |
 | --- | --- | --- |
 | GitHub | [Repository sorgenti](https://github.com/andre94/clawd-airpods4-anc-case) | Pubblico; CAD modificabile, script e documentazione di riferimento. |
-| GitHub Releases | [Release e prerelease](https://github.com/andre94/clawd-airpods4-anc-case/releases) | Archivi sorgenti e file per la stampa versionati; v0.3.0-alpha conservata come storico. |
-| Printables | [Pagina del modello](https://www.printables.com/model/1837773-clawd-airpods-4-anc-case-open-cad-v03-wip) | Pubblico v03; aggiornamento v04 in attesa. Due STL, 3MF, file Blender e rendering. |
-| Sketchfab | [Visualizzatore 3D interattivo](https://sketchfab.com/3d-models/clawd-airpods-4-anc-case-open-cad-v03-wip-1aea2f19414b48d38c48bbdb90f80ad6) | Pubblico v03; aggiornamento v04 in attesa. Non è un file per la stampa. |
-| Thingiverse | [Bozza salvata](https://www.thingiverse.com/thing:7407403) · [Editor del proprietario](https://www.thingiverse.com/thing:7407403/edit) | Bozza v03; aggiornamento v04 e visibilità pubblica non confermati. La pubblicazione iniziale era bloccata dall'attesa per i nuovi account. Login del proprietario richiesto. |
+| GitHub Releases | [Release e prerelease](https://github.com/andre94/clawd-airpods4-anc-case/releases) | v0.4.0-alpha resta la versione precedente, prima dell'aggiornamento su main. |
+| Printables | [File del modello](https://www.printables.com/model/1837773-clawd-airpods-4-anc-case-open-cad-v04-wip/files) | Pubblicati due STL, 3MF e Blender aggiornati; vecchi download sostituiti. |
+| Sketchfab | [Visualizzatore 3D interattivo](https://sketchfab.com/3d-models/clawd-airpods-4-anc-case-open-cad-v04-wip-1aea2f19414b48d38c48bbdb90f80ad6) | Nuovo GLB attivato. Non è un file per la stampa. |
+| Thingiverse | [File del modello](https://www.thingiverse.com/thing:7407403/files) | Salvati due STL, 3MF e ZIP sorgenti aggiornati. La pagina mostra Work in Progress, non il banner di bozza non pubblicata. |
 
-La pubblicazione non equivale a una verifica fisica. La pubblicazione su
-Thingiverse non è programmata automaticamente: aggiornare questo stato datato
-dopo l'effettiva messa online.
+La pubblicazione non equivale a una verifica fisica. I rendering esistenti non
+mostrano la modifica inferiore. Le versioni precedenti restano nello storico Git.
 
 ## Cosa scaricare
 
-- Un corpo e un coperchio da `exports/clawd-v04/clawd-prototype/`.
+- Un corpo e un coperchio da `exports/v04-bottom-access/`.
 - Scegliere i due STL **oppure** il 3MF contenente entrambi: non stampare duplicati.
 - Unità millimetri, scala 100%. Il 3MF non contiene un profilo macchina validato.
 - Il file Blender modificabile è in `models/`; parametri e script sono inclusi.
@@ -40,7 +44,7 @@ sono riferimenti visivi, non pezzi da stampare.
 ## Novità v04 e ritenzione
 
 Maggiore copertura posteriore con scarico sagomato per la cerniera, finestra
-frontale delimitata e aperture separate per USB-C e altoparlanti. Non è una
+frontale delimitata e aperture USB-C/laterali ora collegate. Non è una
 custodia sigillata o impermeabile. Sagoma, incisione e foro restano invariati.
 
 Servono **cinque inserti morbidi separati**, non stampati: due sul corpo, due

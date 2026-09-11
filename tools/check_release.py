@@ -62,6 +62,11 @@ def main():
         "models/clawd-airpods4-anc-v04.blend", "docs/clawd-design-v04.md",
         "exports/clawd-v04/qa/publication-audit.json",
         "exports/clawd-v04/qa/coverage-revision-validation.json",
+        "models/clawd-airpods4-anc-v04-bottom-access.blend",
+        "tools/export_clawd_bottom_access.py",
+        "docs/clawd-bottom-access.md",
+        "exports/v04-bottom-access/validation.json",
+        "exports/v04-bottom-access/clawd-airpods4-anc-v04-bottom-access-viewer.glb",
     )
     for relative in required:
         if not (ROOT / relative).is_file():
@@ -80,8 +85,12 @@ def main():
             raise ValueError(f"Oversized repository file: {relative}")
         files[str(relative)] = {"sha256": hashlib.sha256(data).hexdigest(), "bytes": len(data)}
     meshes = {}
-    for revision in ("v03", "v04"):
-        directory = ROOT / f"exports/clawd-{revision}/clawd-prototype"
+    for revision in ("v03", "v04", "v04-bottom-access"):
+        directory = ROOT / (
+            "exports/v04-bottom-access"
+            if revision == "v04-bottom-access"
+            else f"exports/clawd-{revision}/clawd-prototype"
+        )
         for part, dimensions in EXPECTED_DIMENSIONS.items():
             filename = f"clawd-prototype-{part}-{revision}-mm.stl"
             meshes[filename] = check_stl(directory / filename, dimensions)
@@ -94,7 +103,12 @@ def main():
             if model.get("unit") != "millimeter" or len(objects) != 2:
                 raise ValueError("3MF must contain exactly two objects in millimetres")
     if args.write_manifest:
-        MANIFEST.write_text(json.dumps({"release": "v0.4.0-alpha", "design_revision": "v04", "files": files}, indent=2) + "\n")
+        MANIFEST.write_text(json.dumps({
+            "release": "unreleased",
+            "baseline_release": "v0.4.0-alpha",
+            "design_revision": "v04-bottom-access",
+            "files": files,
+        }, indent=2) + "\n")
     elif json.loads(MANIFEST.read_text())["files"] != files:
         raise ValueError("Release files differ from manifest; review changes before regenerating it")
     print(json.dumps({"file_count": len(files), "meshes": meshes, "three_mf_objects": 2, "physical_validation": "NOT PERFORMED"}, indent=2))

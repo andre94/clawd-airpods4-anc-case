@@ -1,12 +1,13 @@
-# Printing the v04 prototype
+# Printing the v04-bottom-access prototype
 
 **Not physically validated. Request a supplier-specific technical review before
 ordering. An automatic quote or a watertight mesh is not manufacturing approval.**
 
 ## Quantity, units and orientation
 
-Print one `clawd-prototype-body-v04-mm.stl` and one
-`clawd-prototype-lid-v04-mm.stl`, or use the alternative two-part 3MF. Do not
+Print one `clawd-prototype-body-v04-bottom-access-mm.stl` and one
+`clawd-prototype-lid-v04-bottom-access-mm.stl` from `exports/v04-bottom-access/`,
+or use the matching two-part 3MF. Do not
 combine both options into an order. All dimensions are in mm at 100% scale.
 The exported lid is reoriented for separate manufacture; the native blend
 shows its assembled position. The printer should choose build orientation,
@@ -68,8 +69,10 @@ not foam deformation simulations or printable hardware. See the
 
 ## Access and charging
 
-The model includes geometric openings for front access, hinge movement and a
-14 × 8 mm USB-C window plus two 6 × 4 mm ANC-speaker windows. Opening geometry is not evidence that
+The model includes geometric openings for front access and hinge movement.
+The bottom-access update connects the original 14 × 8 mm USB-C window to the
+two 6 × 4 mm side service windows by removing their intervening bridges.
+Removing material can reduce local strength. Opening geometry is not evidence that
 every plug, tap gesture or charging pad works. Qi / Apple Watch charging,
 alignment and temperature need real-device checks. No magnets or conductive
 inserts are specified. Hardware placement must not impede charging or scratch

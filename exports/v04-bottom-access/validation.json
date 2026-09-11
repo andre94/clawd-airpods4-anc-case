@@ -1,0 +1,92 @@
+{
+  "revision": "v04-bottom-access",
+  "baseline": "GitHub v0.4.0-alpha; no new GitHub release created",
+  "before": {
+    "geometry_sha256": "21560813a069023961eba6db17c5ca5f40aa8737387f55ef79695ae24fd2e86d",
+    "vertices": 9855,
+    "triangles": 19726,
+    "connected_components": 1,
+    "boundary_edges": 0,
+    "non_manifold_edges": 0,
+    "inconsistently_oriented_edges": 0,
+    "loose_vertices": 0,
+    "degenerate_faces_below_1e-10_mm2": 0,
+    "signed_volume_mm3": 39096.35916931913,
+    "surface_area_mm2": 15677.250619859293,
+    "dimensions_mm": [
+      75.77777862548828,
+      26.899999618530273,
+      42.39634323120117
+    ],
+    "nonadjacent_triangle_overlap_candidates": 0,
+    "overlap_candidate_examples": []
+  },
+  "after": {
+    "geometry_sha256": "bb031bed17fe1cbfba8442a1411f668d860277779b1489c44ae3fb4ee46e9959",
+    "vertices": 9885,
+    "triangles": 19778,
+    "connected_components": 1,
+    "boundary_edges": 0,
+    "non_manifold_edges": 0,
+    "inconsistently_oriented_edges": 0,
+    "loose_vertices": 0,
+    "degenerate_faces_below_1e-10_mm2": 0,
+    "signed_volume_mm3": 39036.76233121847,
+    "surface_area_mm2": 15616.687149032967,
+    "dimensions_mm": [
+      75.77777862548828,
+      26.899999618530273,
+      42.39634323120117
+    ],
+    "nonadjacent_triangle_overlap_candidates": 0,
+    "overlap_candidate_examples": []
+  },
+  "approved_study_geometry_match": true,
+  "other_mesh_geometry_unchanged": true,
+  "bridge_access_probes_passed": 18,
+  "stl_round_trips": {
+    "body": {
+      "dimensions_mm": [
+        75.77777862548828,
+        26.899999618530273,
+        42.39634323120117
+      ],
+      "non_manifold_edges": 0,
+      "boundary_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume_mm3": 39036.76228820968,
+      "scale_matches_within_0_001_mm": true
+    },
+    "lid": {
+      "dimensions_mm": [
+        62.0,
+        26.900001525878906,
+        16.50365447998047
+      ],
+      "non_manifold_edges": 0,
+      "boundary_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume_mm3": 16202.465521816854,
+      "scale_matches_within_0_001_mm": true
+    }
+  },
+  "three_mf_check": {
+    "unit": "millimeter",
+    "objects": [
+      {
+        "name": "body",
+        "vertices": 9885,
+        "triangles": 19778
+      },
+      {
+        "name": "lid",
+        "vertices": 5266,
+        "triangles": 10528
+      }
+    ],
+    "zip_crc_check_passed": true
+  },
+  "viewer_mesh_count": 4,
+  "viewer_units": "metres",
+  "physical_tests_performed": []
+}

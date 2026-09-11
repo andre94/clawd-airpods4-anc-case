@@ -1,5 +1,28 @@
 # Build and edit
 
+## Current bottom-access update
+
+The current editable model is `models/clawd-airpods4-anc-v04-bottom-access.blend`,
+and current print/viewer files are in `exports/v04-bottom-access/`.
+`v0.4.0-alpha` and the v04 files without this suffix are historical baselines.
+
+The rebuild command below produces the v04 baseline in a new directory. Then
+apply the bottom-access update using the script copied into that directory:
+
+```sh
+/path/to/blender --background /path/to/new-empty-build/models/clawd-airpods4-anc-v04.blend \
+  --python-exit-code 1 --python /path/to/new-empty-build/tools/export_clawd_bottom_access.py
+```
+
+The script refuses to overwrite an existing bottom-access `.blend`. It verifies
+the baseline geometry digest, removes two rounded bridges, matches the approved
+study digest, checks that other meshes are unchanged, and exports/round-trip
+checks the printable pair. The GLB contains only the body, lid and two paint
+indicators in metre coordinates. No animated inspection pose is used for exports.
+
+See [the bottom-access report](../exports/v04-bottom-access/validation.json)
+and [design notes](clawd-bottom-access.md). This is digital validation only.
+
 ## Requirements
 
 - Blender 5.2.1 LTS, including its Python API and FBX importer.
